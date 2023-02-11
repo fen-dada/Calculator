@@ -488,11 +488,18 @@ void show_calc_menu(u8g2_t *u8g2){
 				memset(res, 0, sizeof(res));
 			}else{
 			*/
-				memset(res, 0, sizeof(res));
-				sprintf(res,"%.4lf",ans);
+			 
+			 if(isnan(ans)){
+				 memset(res, 0, sizeof(res));
+					legal=false;
+			 }else{
+					memset(res, 0, sizeof(res));
+				  sprintf(res,"%.4lf",ans);
+			 }
 				
 				
-				u8g2_DrawStr(u8g2,50,50,res);
+				
+				//u8g2_DrawStr(u8g2,50,50,res);
 
 				is_first=true;
 				i=0;

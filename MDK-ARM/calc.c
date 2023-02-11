@@ -18,7 +18,6 @@ double fact(double x){
 
 void work()
 {
-	//printf("nmsl");
     double b=stk_int[top_int];
 	top_int--;
     double a=0;
@@ -29,29 +28,41 @@ void work()
 			a=stk_int[top_int];
 	    top_int--;
 	}
-    double ans=0;
+    double ans;
     if(op=='+') ans=a+b;
     else if(op=='-') ans=a-b;
     else if(op=='*') ans=a*b;
-    else if(op=='/') ans=a/b;
+    else if(op=='/'){
+				 ans=a/b;
+			if(b==0) legal=false;
+		}
 		else if(op=='s') ans=sin(b);
 	  else if(op=='c') ans=cos(b);
 	  else if(op=='t') ans=tan(b);
-		else if(op=='l') ans=log(b);
-		else if(op=='i') ans=asin(b);
-		else if(op=='o') ans=acos(b);
+		else if(op=='l'){
+				 ans=log(b);
+			if(b<=0){
+					legal=false;
+			}
+		}
+		else if(op=='i'){
+				ans=asin(b);
+				if(b>1 || b<-1){
+						legal=false;
+				}
+		} 
+		else if(op=='o'){
+				ans=acos(b);
+			if(b>1 || b<-1){
+						legal=false;
+				}
+		} 
 		else if(op=='p') ans=atan(b);
 		else if(op=='!') ans=fact(b);
 		else{
 			ans=pow((double)a,(double)b);
 	}
-
-    stk_int[++top_int]=ans;
-//    for(int i=0;i<=top_int;i++) printf("%d ",stk_int[i]);
-//    puts("");
-//    for(int i=0;i<=top_op;i++) printf("%C ",stk_op[i]);
-//    puts("");
-    //printf("%d %d\n",a,b);
+		stk_int[++top_int]=ans;
     return;
 }
 
@@ -99,7 +110,7 @@ double calc(char str[]){
     for(int i=1;i<strlen(str);i++){
         if(
             //( is_op(str[i]) && is_op(str[i-1]) ) || 
-            ( is_op(str[i]) && str[i-1] == '(' ) ||
+            //( is_op(str[i]) && str[i-1] == '(' ) || //(-
             ( is_op(str[i-1]) && str[i] == ')' ) ||
             ( str[i] == '(' && isdigit(str[i-1]) ) ||
             ( isdigit(str[i]) && str[i-1] == ')') ||

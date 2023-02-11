@@ -93,15 +93,18 @@ Section Cross References
     calc.o(i.value_4) refers to dadd.o(.text) for __aeabi_dadd
     calc.o(i.work) refers to calc.o(i.is_op) for is_op
     calc.o(i.work) refers to pow.o(i.pow) for pow
+    calc.o(i.work) refers to printfa.o(i.__0sprintf) for __2sprintf
     calc.o(i.work) refers to dadd.o(.text) for __aeabi_dadd
     calc.o(i.work) refers to dmul.o(.text) for __aeabi_dmul
     calc.o(i.work) refers to ddiv.o(.text) for __aeabi_ddiv
+    calc.o(i.work) refers to cdcmple.o(.text) for __aeabi_cdcmpeq
     calc.o(i.work) refers to sin.o(i.sin) for sin
     calc.o(i.work) refers to cos.o(i.cos) for cos
     calc.o(i.work) refers to tan.o(i.tan) for tan
     calc.o(i.work) refers to log.o(i.log) for log
     calc.o(i.work) refers to asin.o(i.asin) for asin
     calc.o(i.work) refers to acos.o(i.acos) for acos
+    calc.o(i.work) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
     calc.o(i.work) refers to atan.o(i.atan) for atan
     calc.o(i.work) refers to calc.o(i.fact) for fact
     calc.o(i.work) refers to calc.o(.bss) for .bss
@@ -5357,199 +5360,199 @@ Image Symbol Table
     i.asin                                   0x08003c50   Section        0  asin.o(i.asin)
     i.atan                                   0x08003ec0   Section        0  atan.o(i.atan)
     i.calc                                   0x080040e0   Section        0  calc.o(i.calc)
-    i.calc_d                                 0x080044f0   Section        0  calc.o(i.calc_d)
-    i.calc_def                               0x0800488c   Section        0  calc.o(i.calc_def)
-    i.calc_work                              0x08004948   Section        0  comp.o(i.calc_work)
-    i.comp_calc                              0x08004a3c   Section        0  comp.o(i.comp_calc)
-    i.cos                                    0x08004d74   Section        0  cos.o(i.cos)
-    i.divi                                   0x08004e10   Section        0  comp.o(i.divi)
-    i.exp                                    0x08004e90   Section        0  exp.o(i.exp)
-    i.fact                                   0x08005114   Section        0  calc.o(i.fact)
-    i.fputc                                  0x0800515c   Section        0  main.o(i.fputc)
-    i.gui_run                                0x08005174   Section        0  gui.o(i.gui_run)
-    i.is_op                                  0x08005196   Section        0  calc.o(i.is_op)
-    i.key_init                               0x080051b4   Section        0  gui.o(i.key_init)
-    i.key_scan_lr                            0x080051e4   Section        0  gui.o(i.key_scan_lr)
-    i.key_scan_ud                            0x080052b4   Section        0  gui.o(i.key_scan_ud)
-    i.log                                    0x08005528   Section        0  log.o(i.log)
-    i.log_v                                  0x08005884   Section        0  value.o(i.log_v)
-    i.main                                   0x080058ac   Section        0  main.o(i.main)
-    i.minus                                  0x08005a04   Section        0  comp.o(i.minus)
-    i.mul                                    0x08005a42   Section        0  comp.o(i.mul)
-    i.pow                                    0x08005ab4   Section        0  pow.o(i.pow)
-    i.show_calc_menu                         0x0800648c   Section        0  gui.o(i.show_calc_menu)
-    i.show_comp_calc                         0x08006868   Section        0  gui.o(i.show_comp_calc)
-    i.show_cub_calc                          0x08006b04   Section        0  gui.o(i.show_cub_calc)
-    i.show_def_solu                          0x08006d9c   Section        0  gui.o(i.show_def_solu)
-    i.show_equa_menu                         0x08007168   Section        0  gui.o(i.show_equa_menu)
-    i.show_func_menu                         0x0800728c   Section        0  gui.o(i.show_func_menu)
-    i.show_func_solu                         0x080073b0   Section        0  gui.o(i.show_func_solu)
-    i.show_main_menu                         0x08007684   Section        0  gui.o(i.show_main_menu)
-    i.show_quad_calc                         0x08007778   Section        0  gui.o(i.show_quad_calc)
-    i.show_quar_calc                         0x08007af8   Section        0  gui.o(i.show_quar_calc)
-    i.show_sub0_menu                         0x08007e00   Section        0  gui.o(i.show_sub0_menu)
-    i.show_sub1_menu                         0x08007f1c   Section        0  gui.o(i.show_sub1_menu)
-    i.show_sub2_menu                         0x08008038   Section        0  gui.o(i.show_sub2_menu)
-    i.show_sub3_menu                         0x08008154   Section        0  gui.o(i.show_sub3_menu)
-    i.show_sub4_menu                         0x08008270   Section        0  gui.o(i.show_sub4_menu)
-    i.show_sub5_menu                         0x0800838c   Section        0  gui.o(i.show_sub5_menu)
-    i.show_sub6_menu                         0x080084a8   Section        0  gui.o(i.show_sub6_menu)
-    i.show_sub7_menu                         0x0800864c   Section        0  gui.o(i.show_sub7_menu)
-    i.show_sub8_menu                         0x08008764   Section        0  gui.o(i.show_sub8_menu)
-    i.show_sub9_menu                         0x0800887c   Section        0  gui.o(i.show_sub9_menu)
-    i.sin                                    0x08008a1c   Section        0  sin.o(i.sin)
-    i.solve                                  0x08008abc   Section        0  calc.o(i.solve)
-    i.solve_3                                0x08008be4   Section        0  calc.o(i.solve_3)
-    i.solve_4                                0x08008cac   Section        0  calc.o(i.solve_4)
-    i.sqrt                                   0x08008da4   Section        0  sqrt.o(i.sqrt)
-    i.strtod                                 0x08008df0   Section        0  strtod.o(i.strtod)
-    i.tan                                    0x08008e0c   Section        0  tan.o(i.tan)
-    i.trans_pin                              0x08008e70   Section        0  gui.o(i.trans_pin)
-    i.u8g2Init                               0x08008e8c   Section        0  gui.o(i.u8g2Init)
-    i.u8g2_ClearBuffer                       0x08008eb8   Section        0  u8g2_buffer.o(i.u8g2_ClearBuffer)
-    i.u8g2_DrawCircle                        0x08008eca   Section        0  u8g2_circle.o(i.u8g2_DrawCircle)
-    i.u8g2_DrawGlyph                         0x08008f0a   Section        0  u8g2_font.o(i.u8g2_DrawGlyph)
-    i.u8g2_DrawHLine                         0x08008f7a   Section        0  u8g2_hvline.o(i.u8g2_DrawHLine)
-    i.u8g2_DrawHVLine                        0x08008f88   Section        0  u8g2_hvline.o(i.u8g2_DrawHVLine)
-    i.u8g2_DrawPixel                         0x08009034   Section        0  u8g2_hvline.o(i.u8g2_DrawPixel)
-    i.u8g2_DrawRFrame                        0x08009062   Section        0  u8g2_box.o(i.u8g2_DrawRFrame)
-    i.u8g2_DrawStr                           0x08009164   Section        0  u8g2_font.o(i.u8g2_DrawStr)
-    i.u8g2_DrawVLine                         0x08009174   Section        0  u8g2_hvline.o(i.u8g2_DrawVLine)
-    i.u8g2_FirstPage                         0x08009180   Section        0  u8g2_buffer.o(i.u8g2_FirstPage)
-    i.u8g2_IsIntersection                    0x0800919c   Section        0  u8g2_intersection.o(i.u8g2_IsIntersection)
-    i.u8g2_NextPage                          0x080091cc   Section        0  u8g2_buffer.o(i.u8g2_NextPage)
-    i.u8g2_SetBufferCurrTileRow              0x0800920a   Section        0  u8g2_buffer.o(i.u8g2_SetBufferCurrTileRow)
-    i.u8g2_SetFont                           0x08009226   Section        0  u8g2_font.o(i.u8g2_SetFont)
-    i.u8g2_SetFontPosBaseline                0x08009248   Section        0  u8g2_font.o(i.u8g2_SetFontPosBaseline)
-    i.u8g2_SetMaxClipWindow                  0x08009254   Section        0  u8g2_setup.o(i.u8g2_SetMaxClipWindow)
-    i.u8g2_SetupBuffer                       0x08009270   Section        0  u8g2_setup.o(i.u8g2_SetupBuffer)
-    i.u8g2_Setup_ssd1306_128x64_noname_f     0x080092b8   Section        0  u8g2_d_setup.o(i.u8g2_Setup_ssd1306_128x64_noname_f)
-    i.u8g2_UpdateRefHeight                   0x080092f0   Section        0  u8g2_font.o(i.u8g2_UpdateRefHeight)
-    i.u8g2_add_vector_x                      0x08009342   Section        0  u8g2_font.o(i.u8g2_add_vector_x)
-    i.u8g2_add_vector_y                      0x0800935e   Section        0  u8g2_font.o(i.u8g2_add_vector_y)
-    i.u8g2_apply_clip_window                 0x0800937a   Section        0  u8g2_setup.o(i.u8g2_apply_clip_window)
-    u8g2_apply_clip_window                   0x0800937b   Thumb Code   110  u8g2_setup.o(i.u8g2_apply_clip_window)
-    i.u8g2_clip_intersection2                0x080093e8   Section        0  u8g2_hvline.o(i.u8g2_clip_intersection2)
-    u8g2_clip_intersection2                  0x080093e9   Thumb Code    60  u8g2_hvline.o(i.u8g2_clip_intersection2)
-    i.u8g2_draw_circle                       0x08009424   Section        0  u8g2_circle.o(i.u8g2_draw_circle)
-    u8g2_draw_circle                         0x08009425   Thumb Code   106  u8g2_circle.o(i.u8g2_draw_circle)
-    i.u8g2_draw_circle_section               0x0800948e   Section        0  u8g2_circle.o(i.u8g2_draw_circle_section)
-    u8g2_draw_circle_section                 0x0800948f   Thumb Code   186  u8g2_circle.o(i.u8g2_draw_circle_section)
-    i.u8g2_draw_hv_line_2dir                 0x08009548   Section        0  u8g2_hvline.o(i.u8g2_draw_hv_line_2dir)
-    i.u8g2_draw_l90_r0                       0x0800955a   Section        0  u8g2_setup.o(i.u8g2_draw_l90_r0)
-    i.u8g2_draw_string                       0x08009566   Section        0  u8g2_font.o(i.u8g2_draw_string)
-    u8g2_draw_string                         0x08009567   Thumb Code   118  u8g2_font.o(i.u8g2_draw_string)
-    i.u8g2_font_calc_vref_font               0x080095dc   Section        0  u8g2_font.o(i.u8g2_font_calc_vref_font)
-    i.u8g2_font_decode_get_signed_bits       0x080095e0   Section        0  u8g2_font.o(i.u8g2_font_decode_get_signed_bits)
-    i.u8g2_font_decode_get_unsigned_bits     0x080095f4   Section        0  u8g2_font.o(i.u8g2_font_decode_get_unsigned_bits)
-    i.u8g2_font_decode_glyph                 0x08009628   Section        0  u8g2_font.o(i.u8g2_font_decode_glyph)
-    i.u8g2_font_decode_len                   0x0800973c   Section        0  u8g2_font.o(i.u8g2_font_decode_len)
-    i.u8g2_font_get_glyph_data               0x080097c8   Section        0  u8g2_font.o(i.u8g2_font_get_glyph_data)
-    i.u8g2_font_get_word                     0x0800983a   Section        0  u8g2_font.o(i.u8g2_font_get_word)
-    u8g2_font_get_word                       0x0800983b   Thumb Code    20  u8g2_font.o(i.u8g2_font_get_word)
-    i.u8g2_font_setup_decode                 0x0800984e   Section        0  u8g2_font.o(i.u8g2_font_setup_decode)
-    u8g2_font_setup_decode                   0x0800984f   Thumb Code    52  u8g2_font.o(i.u8g2_font_setup_decode)
-    i.u8g2_is_intersection_decision_tree     0x08009882   Section        0  u8g2_intersection.o(i.u8g2_is_intersection_decision_tree)
-    i.u8g2_ll_hvline_vertical_top_lsb        0x0800989c   Section        0  u8g2_ll_hvline.o(i.u8g2_ll_hvline_vertical_top_lsb)
-    i.u8g2_m_16_8_f                          0x0800992c   Section        0  u8g2_d_memory.o(i.u8g2_m_16_8_f)
-    i.u8g2_read_font_info                    0x08009938   Section        0  u8g2_font.o(i.u8g2_read_font_info)
-    i.u8g2_send_buffer                       0x080099a2   Section        0  u8g2_buffer.o(i.u8g2_send_buffer)
-    u8g2_send_buffer                         0x080099a3   Thumb Code    78  u8g2_buffer.o(i.u8g2_send_buffer)
-    i.u8g2_update_dimension_common           0x080099f0   Section        0  u8g2_setup.o(i.u8g2_update_dimension_common)
-    u8g2_update_dimension_common             0x080099f1   Thumb Code    70  u8g2_setup.o(i.u8g2_update_dimension_common)
-    i.u8g2_update_dimension_r0               0x08009a36   Section        0  u8g2_setup.o(i.u8g2_update_dimension_r0)
-    i.u8g2_update_page_win_r0                0x08009a3a   Section        0  u8g2_setup.o(i.u8g2_update_page_win_r0)
-    i.u8x8_DrawTile                          0x08009a5c   Section        0  u8x8_display.o(i.u8x8_DrawTile)
-    i.u8x8_InitDisplay                       0x08009a7a   Section        0  u8x8_display.o(i.u8x8_InitDisplay)
-    i.u8x8_RefreshDisplay                    0x08009a8a   Section        0  u8x8_display.o(i.u8x8_RefreshDisplay)
-    i.u8x8_SetPowerSave                      0x08009a9a   Section        0  u8x8_display.o(i.u8x8_SetPowerSave)
-    i.u8x8_Setup                             0x08009aaa   Section        0  u8x8_setup.o(i.u8x8_Setup)
-    i.u8x8_SetupDefaults                     0x08009acc   Section        0  u8x8_setup.o(i.u8x8_SetupDefaults)
-    i.u8x8_SetupMemory                       0x08009af0   Section        0  u8x8_display.o(i.u8x8_SetupMemory)
-    i.u8x8_ascii_next                        0x08009b00   Section        0  u8x8_8x8.o(i.u8x8_ascii_next)
-    i.u8x8_byte_4wire_hw_spi                 0x08009b10   Section        0  gui.o(i.u8x8_byte_4wire_hw_spi)
-    i.u8x8_byte_SendByte                     0x08009b54   Section        0  u8x8_byte.o(i.u8x8_byte_SendByte)
-    i.u8x8_byte_SetDC                        0x08009b62   Section        0  u8x8_byte.o(i.u8x8_byte_SetDC)
-    i.u8x8_cad_001                           0x08009b72   Section        0  u8x8_cad.o(i.u8x8_cad_001)
-    i.u8x8_cad_EndTransfer                   0x08009bc4   Section        0  u8x8_cad.o(i.u8x8_cad_EndTransfer)
-    i.u8x8_cad_SendArg                       0x08009bd4   Section        0  u8x8_cad.o(i.u8x8_cad_SendArg)
-    i.u8x8_cad_SendCmd                       0x08009be4   Section        0  u8x8_cad.o(i.u8x8_cad_SendCmd)
-    i.u8x8_cad_SendData                      0x08009bf4   Section        0  u8x8_cad.o(i.u8x8_cad_SendData)
-    i.u8x8_cad_SendSequence                  0x08009c04   Section        0  u8x8_cad.o(i.u8x8_cad_SendSequence)
-    i.u8x8_cad_StartTransfer                 0x08009c6c   Section        0  u8x8_cad.o(i.u8x8_cad_StartTransfer)
-    i.u8x8_d_helper_display_init             0x08009c7c   Section        0  u8x8_display.o(i.u8x8_d_helper_display_init)
-    i.u8x8_d_helper_display_setup_memory     0x08009cdc   Section        0  u8x8_display.o(i.u8x8_d_helper_display_setup_memory)
-    i.u8x8_d_ssd1306_128x64_noname           0x08009ce8   Section        0  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_128x64_noname)
-    i.u8x8_d_ssd1306_sh1106_generic          0x08009d24   Section        0  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_sh1106_generic)
-    u8x8_d_ssd1306_sh1106_generic            0x08009d25   Thumb Code   196  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_sh1106_generic)
-    i.u8x8_dummy_cb                          0x08009dec   Section        0  u8x8_setup.o(i.u8x8_dummy_cb)
-    i.u8x8_gpio_call                         0x08009df0   Section        0  u8x8_gpio.o(i.u8x8_gpio_call)
-    i.u8x8_stm32_gpio_and_delay              0x08009dfc   Section        0  gui.o(i.u8x8_stm32_gpio_and_delay)
-    i.u8x8_utf8_init                         0x08009e30   Section        0  u8x8_8x8.o(i.u8x8_utf8_init)
-    i.value                                  0x08009e38   Section        0  calc.o(i.value)
-    i.value_3                                0x08009e58   Section        0  calc.o(i.value_3)
-    i.value_4                                0x08009ec8   Section        0  calc.o(i.value_4)
-    i.work                                   0x08009f6c   Section        0  calc.o(i.work)
-    .constdata                               0x0800a068   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x0800a078   Section        8  system_stm32f1xx.o(.constdata)
-    .constdata                               0x0800a080   Section     1989  u8g2_fonts.o(.constdata)
-    .constdata                               0x0800a848   Section       12  u8g2_setup.o(.constdata)
-    .constdata                               0x0800a854   Section      344  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_noname_powersave0_seq 0x0800a854   Data           5  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_noname_powersave1_seq 0x0800a859   Data           5  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_noname_flip0_seq   0x0800a85e   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_noname_flip1_seq   0x0800a865   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1312_128x64_noname_flip0_seq   0x0800a86c   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1312_128x64_noname_flip1_seq   0x0800a873   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_noname_init_seq    0x0800a87a   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_vcomh0_init_seq    0x0800a8af   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1306_128x64_alt0_init_seq      0x0800a8e4   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_sh1106_128x64_winstar_init_seq    0x0800a919   Data          45  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_d_ssd1312_128x64_noname_init_seq    0x0800a946   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_ssd1306_128x64_noname_display_info  0x0800a97c   Data          24  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    u8x8_sh1106_128x64_noname_display_info   0x0800a994   Data          24  u8x8_d_ssd1306_128x64_noname.o(.constdata)
-    .constdata                               0x0800a9b0   Section       80  acos.o(.constdata)
-    pS                                       0x0800a9b0   Data          48  acos.o(.constdata)
-    qS                                       0x0800a9e0   Data          32  acos.o(.constdata)
-    .constdata                               0x0800aa00   Section       80  asin.o(.constdata)
-    pS                                       0x0800aa00   Data          48  asin.o(.constdata)
-    qS                                       0x0800aa30   Data          32  asin.o(.constdata)
-    .constdata                               0x0800aa50   Section      152  atan.o(.constdata)
-    atanhi                                   0x0800aa50   Data          32  atan.o(.constdata)
-    atanlo                                   0x0800aa70   Data          32  atan.o(.constdata)
-    aTodd                                    0x0800aa90   Data          40  atan.o(.constdata)
-    aTeven                                   0x0800aab8   Data          48  atan.o(.constdata)
-    .constdata                               0x0800aae8   Section       88  exp.o(.constdata)
-    halF                                     0x0800aae8   Data          16  exp.o(.constdata)
-    ln2HI                                    0x0800aaf8   Data          16  exp.o(.constdata)
-    ln2LO                                    0x0800ab08   Data          16  exp.o(.constdata)
-    P                                        0x0800ab18   Data          40  exp.o(.constdata)
-    .constdata                               0x0800ab40   Section       56  log.o(.constdata)
-    Lg2                                      0x0800ab40   Data          24  log.o(.constdata)
-    Lg                                       0x0800ab58   Data          32  log.o(.constdata)
-    .constdata                               0x0800ab78   Section      136  pow.o(.constdata)
-    bp                                       0x0800ab78   Data          16  pow.o(.constdata)
-    dp_h                                     0x0800ab88   Data          16  pow.o(.constdata)
-    dp_l                                     0x0800ab98   Data          16  pow.o(.constdata)
-    L                                        0x0800aba8   Data          48  pow.o(.constdata)
-    P                                        0x0800abd8   Data          40  pow.o(.constdata)
-    .constdata                               0x0800ac00   Section      129  ctype_o.o(.constdata)
-    .constdata                               0x0800ac84   Section        4  ctype_o.o(.constdata)
-    table                                    0x0800ac84   Data           4  ctype_o.o(.constdata)
-    .constdata                               0x0800ac88   Section       48  cos_i.o(.constdata)
-    C                                        0x0800ac88   Data          48  cos_i.o(.constdata)
-    .constdata                               0x0800acb8   Section        8  qnan.o(.constdata)
-    .constdata                               0x0800acc0   Section      200  rred.o(.constdata)
-    pio2s                                    0x0800acc0   Data          48  rred.o(.constdata)
-    twooverpi                                0x0800acf0   Data         152  rred.o(.constdata)
-    .constdata                               0x0800ad88   Section       40  sin_i.o(.constdata)
-    S                                        0x0800ad88   Data          40  sin_i.o(.constdata)
-    .constdata                               0x0800adb0   Section       96  tan_i.o(.constdata)
-    Todd                                     0x0800adb0   Data          48  tan_i.o(.constdata)
-    Teven                                    0x0800ade0   Data          48  tan_i.o(.constdata)
-    .conststring                             0x0800ae10   Section       61  main.o(.conststring)
-    .conststring                             0x0800ae50   Section       56  main.o(.conststring)
-    .conststring                             0x0800ae88   Section       34  main.o(.conststring)
+    i.calc_d                                 0x080044dc   Section        0  calc.o(i.calc_d)
+    i.calc_def                               0x08004878   Section        0  calc.o(i.calc_def)
+    i.calc_work                              0x08004934   Section        0  comp.o(i.calc_work)
+    i.comp_calc                              0x08004a28   Section        0  comp.o(i.comp_calc)
+    i.cos                                    0x08004d60   Section        0  cos.o(i.cos)
+    i.divi                                   0x08004dfc   Section        0  comp.o(i.divi)
+    i.exp                                    0x08004e7c   Section        0  exp.o(i.exp)
+    i.fact                                   0x08005100   Section        0  calc.o(i.fact)
+    i.fputc                                  0x08005148   Section        0  main.o(i.fputc)
+    i.gui_run                                0x08005160   Section        0  gui.o(i.gui_run)
+    i.is_op                                  0x08005182   Section        0  calc.o(i.is_op)
+    i.key_init                               0x080051a0   Section        0  gui.o(i.key_init)
+    i.key_scan_lr                            0x080051d0   Section        0  gui.o(i.key_scan_lr)
+    i.key_scan_ud                            0x080052a0   Section        0  gui.o(i.key_scan_ud)
+    i.log                                    0x08005514   Section        0  log.o(i.log)
+    i.log_v                                  0x08005870   Section        0  value.o(i.log_v)
+    i.main                                   0x08005898   Section        0  main.o(i.main)
+    i.minus                                  0x080059f0   Section        0  comp.o(i.minus)
+    i.mul                                    0x08005a2e   Section        0  comp.o(i.mul)
+    i.pow                                    0x08005aa0   Section        0  pow.o(i.pow)
+    i.show_calc_menu                         0x08006478   Section        0  gui.o(i.show_calc_menu)
+    i.show_comp_calc                         0x08006884   Section        0  gui.o(i.show_comp_calc)
+    i.show_cub_calc                          0x08006b20   Section        0  gui.o(i.show_cub_calc)
+    i.show_def_solu                          0x08006db8   Section        0  gui.o(i.show_def_solu)
+    i.show_equa_menu                         0x08007190   Section        0  gui.o(i.show_equa_menu)
+    i.show_func_menu                         0x080072b4   Section        0  gui.o(i.show_func_menu)
+    i.show_func_solu                         0x080073d8   Section        0  gui.o(i.show_func_solu)
+    i.show_main_menu                         0x080076ac   Section        0  gui.o(i.show_main_menu)
+    i.show_quad_calc                         0x080077a0   Section        0  gui.o(i.show_quad_calc)
+    i.show_quar_calc                         0x08007b20   Section        0  gui.o(i.show_quar_calc)
+    i.show_sub0_menu                         0x08007e28   Section        0  gui.o(i.show_sub0_menu)
+    i.show_sub1_menu                         0x08007f44   Section        0  gui.o(i.show_sub1_menu)
+    i.show_sub2_menu                         0x08008060   Section        0  gui.o(i.show_sub2_menu)
+    i.show_sub3_menu                         0x0800817c   Section        0  gui.o(i.show_sub3_menu)
+    i.show_sub4_menu                         0x08008298   Section        0  gui.o(i.show_sub4_menu)
+    i.show_sub5_menu                         0x080083b4   Section        0  gui.o(i.show_sub5_menu)
+    i.show_sub6_menu                         0x080084d0   Section        0  gui.o(i.show_sub6_menu)
+    i.show_sub7_menu                         0x08008674   Section        0  gui.o(i.show_sub7_menu)
+    i.show_sub8_menu                         0x0800878c   Section        0  gui.o(i.show_sub8_menu)
+    i.show_sub9_menu                         0x080088a4   Section        0  gui.o(i.show_sub9_menu)
+    i.sin                                    0x08008a44   Section        0  sin.o(i.sin)
+    i.solve                                  0x08008ae4   Section        0  calc.o(i.solve)
+    i.solve_3                                0x08008c0c   Section        0  calc.o(i.solve_3)
+    i.solve_4                                0x08008cd4   Section        0  calc.o(i.solve_4)
+    i.sqrt                                   0x08008dcc   Section        0  sqrt.o(i.sqrt)
+    i.strtod                                 0x08008e18   Section        0  strtod.o(i.strtod)
+    i.tan                                    0x08008e34   Section        0  tan.o(i.tan)
+    i.trans_pin                              0x08008e98   Section        0  gui.o(i.trans_pin)
+    i.u8g2Init                               0x08008eb4   Section        0  gui.o(i.u8g2Init)
+    i.u8g2_ClearBuffer                       0x08008ee0   Section        0  u8g2_buffer.o(i.u8g2_ClearBuffer)
+    i.u8g2_DrawCircle                        0x08008ef2   Section        0  u8g2_circle.o(i.u8g2_DrawCircle)
+    i.u8g2_DrawGlyph                         0x08008f32   Section        0  u8g2_font.o(i.u8g2_DrawGlyph)
+    i.u8g2_DrawHLine                         0x08008fa2   Section        0  u8g2_hvline.o(i.u8g2_DrawHLine)
+    i.u8g2_DrawHVLine                        0x08008fb0   Section        0  u8g2_hvline.o(i.u8g2_DrawHVLine)
+    i.u8g2_DrawPixel                         0x0800905c   Section        0  u8g2_hvline.o(i.u8g2_DrawPixel)
+    i.u8g2_DrawRFrame                        0x0800908a   Section        0  u8g2_box.o(i.u8g2_DrawRFrame)
+    i.u8g2_DrawStr                           0x0800918c   Section        0  u8g2_font.o(i.u8g2_DrawStr)
+    i.u8g2_DrawVLine                         0x0800919c   Section        0  u8g2_hvline.o(i.u8g2_DrawVLine)
+    i.u8g2_FirstPage                         0x080091a8   Section        0  u8g2_buffer.o(i.u8g2_FirstPage)
+    i.u8g2_IsIntersection                    0x080091c4   Section        0  u8g2_intersection.o(i.u8g2_IsIntersection)
+    i.u8g2_NextPage                          0x080091f4   Section        0  u8g2_buffer.o(i.u8g2_NextPage)
+    i.u8g2_SetBufferCurrTileRow              0x08009232   Section        0  u8g2_buffer.o(i.u8g2_SetBufferCurrTileRow)
+    i.u8g2_SetFont                           0x0800924e   Section        0  u8g2_font.o(i.u8g2_SetFont)
+    i.u8g2_SetFontPosBaseline                0x08009270   Section        0  u8g2_font.o(i.u8g2_SetFontPosBaseline)
+    i.u8g2_SetMaxClipWindow                  0x0800927c   Section        0  u8g2_setup.o(i.u8g2_SetMaxClipWindow)
+    i.u8g2_SetupBuffer                       0x08009298   Section        0  u8g2_setup.o(i.u8g2_SetupBuffer)
+    i.u8g2_Setup_ssd1306_128x64_noname_f     0x080092e0   Section        0  u8g2_d_setup.o(i.u8g2_Setup_ssd1306_128x64_noname_f)
+    i.u8g2_UpdateRefHeight                   0x08009318   Section        0  u8g2_font.o(i.u8g2_UpdateRefHeight)
+    i.u8g2_add_vector_x                      0x0800936a   Section        0  u8g2_font.o(i.u8g2_add_vector_x)
+    i.u8g2_add_vector_y                      0x08009386   Section        0  u8g2_font.o(i.u8g2_add_vector_y)
+    i.u8g2_apply_clip_window                 0x080093a2   Section        0  u8g2_setup.o(i.u8g2_apply_clip_window)
+    u8g2_apply_clip_window                   0x080093a3   Thumb Code   110  u8g2_setup.o(i.u8g2_apply_clip_window)
+    i.u8g2_clip_intersection2                0x08009410   Section        0  u8g2_hvline.o(i.u8g2_clip_intersection2)
+    u8g2_clip_intersection2                  0x08009411   Thumb Code    60  u8g2_hvline.o(i.u8g2_clip_intersection2)
+    i.u8g2_draw_circle                       0x0800944c   Section        0  u8g2_circle.o(i.u8g2_draw_circle)
+    u8g2_draw_circle                         0x0800944d   Thumb Code   106  u8g2_circle.o(i.u8g2_draw_circle)
+    i.u8g2_draw_circle_section               0x080094b6   Section        0  u8g2_circle.o(i.u8g2_draw_circle_section)
+    u8g2_draw_circle_section                 0x080094b7   Thumb Code   186  u8g2_circle.o(i.u8g2_draw_circle_section)
+    i.u8g2_draw_hv_line_2dir                 0x08009570   Section        0  u8g2_hvline.o(i.u8g2_draw_hv_line_2dir)
+    i.u8g2_draw_l90_r0                       0x08009582   Section        0  u8g2_setup.o(i.u8g2_draw_l90_r0)
+    i.u8g2_draw_string                       0x0800958e   Section        0  u8g2_font.o(i.u8g2_draw_string)
+    u8g2_draw_string                         0x0800958f   Thumb Code   118  u8g2_font.o(i.u8g2_draw_string)
+    i.u8g2_font_calc_vref_font               0x08009604   Section        0  u8g2_font.o(i.u8g2_font_calc_vref_font)
+    i.u8g2_font_decode_get_signed_bits       0x08009608   Section        0  u8g2_font.o(i.u8g2_font_decode_get_signed_bits)
+    i.u8g2_font_decode_get_unsigned_bits     0x0800961c   Section        0  u8g2_font.o(i.u8g2_font_decode_get_unsigned_bits)
+    i.u8g2_font_decode_glyph                 0x08009650   Section        0  u8g2_font.o(i.u8g2_font_decode_glyph)
+    i.u8g2_font_decode_len                   0x08009764   Section        0  u8g2_font.o(i.u8g2_font_decode_len)
+    i.u8g2_font_get_glyph_data               0x080097f0   Section        0  u8g2_font.o(i.u8g2_font_get_glyph_data)
+    i.u8g2_font_get_word                     0x08009862   Section        0  u8g2_font.o(i.u8g2_font_get_word)
+    u8g2_font_get_word                       0x08009863   Thumb Code    20  u8g2_font.o(i.u8g2_font_get_word)
+    i.u8g2_font_setup_decode                 0x08009876   Section        0  u8g2_font.o(i.u8g2_font_setup_decode)
+    u8g2_font_setup_decode                   0x08009877   Thumb Code    52  u8g2_font.o(i.u8g2_font_setup_decode)
+    i.u8g2_is_intersection_decision_tree     0x080098aa   Section        0  u8g2_intersection.o(i.u8g2_is_intersection_decision_tree)
+    i.u8g2_ll_hvline_vertical_top_lsb        0x080098c4   Section        0  u8g2_ll_hvline.o(i.u8g2_ll_hvline_vertical_top_lsb)
+    i.u8g2_m_16_8_f                          0x08009954   Section        0  u8g2_d_memory.o(i.u8g2_m_16_8_f)
+    i.u8g2_read_font_info                    0x08009960   Section        0  u8g2_font.o(i.u8g2_read_font_info)
+    i.u8g2_send_buffer                       0x080099ca   Section        0  u8g2_buffer.o(i.u8g2_send_buffer)
+    u8g2_send_buffer                         0x080099cb   Thumb Code    78  u8g2_buffer.o(i.u8g2_send_buffer)
+    i.u8g2_update_dimension_common           0x08009a18   Section        0  u8g2_setup.o(i.u8g2_update_dimension_common)
+    u8g2_update_dimension_common             0x08009a19   Thumb Code    70  u8g2_setup.o(i.u8g2_update_dimension_common)
+    i.u8g2_update_dimension_r0               0x08009a5e   Section        0  u8g2_setup.o(i.u8g2_update_dimension_r0)
+    i.u8g2_update_page_win_r0                0x08009a62   Section        0  u8g2_setup.o(i.u8g2_update_page_win_r0)
+    i.u8x8_DrawTile                          0x08009a84   Section        0  u8x8_display.o(i.u8x8_DrawTile)
+    i.u8x8_InitDisplay                       0x08009aa2   Section        0  u8x8_display.o(i.u8x8_InitDisplay)
+    i.u8x8_RefreshDisplay                    0x08009ab2   Section        0  u8x8_display.o(i.u8x8_RefreshDisplay)
+    i.u8x8_SetPowerSave                      0x08009ac2   Section        0  u8x8_display.o(i.u8x8_SetPowerSave)
+    i.u8x8_Setup                             0x08009ad2   Section        0  u8x8_setup.o(i.u8x8_Setup)
+    i.u8x8_SetupDefaults                     0x08009af4   Section        0  u8x8_setup.o(i.u8x8_SetupDefaults)
+    i.u8x8_SetupMemory                       0x08009b18   Section        0  u8x8_display.o(i.u8x8_SetupMemory)
+    i.u8x8_ascii_next                        0x08009b28   Section        0  u8x8_8x8.o(i.u8x8_ascii_next)
+    i.u8x8_byte_4wire_hw_spi                 0x08009b38   Section        0  gui.o(i.u8x8_byte_4wire_hw_spi)
+    i.u8x8_byte_SendByte                     0x08009b7c   Section        0  u8x8_byte.o(i.u8x8_byte_SendByte)
+    i.u8x8_byte_SetDC                        0x08009b8a   Section        0  u8x8_byte.o(i.u8x8_byte_SetDC)
+    i.u8x8_cad_001                           0x08009b9a   Section        0  u8x8_cad.o(i.u8x8_cad_001)
+    i.u8x8_cad_EndTransfer                   0x08009bec   Section        0  u8x8_cad.o(i.u8x8_cad_EndTransfer)
+    i.u8x8_cad_SendArg                       0x08009bfc   Section        0  u8x8_cad.o(i.u8x8_cad_SendArg)
+    i.u8x8_cad_SendCmd                       0x08009c0c   Section        0  u8x8_cad.o(i.u8x8_cad_SendCmd)
+    i.u8x8_cad_SendData                      0x08009c1c   Section        0  u8x8_cad.o(i.u8x8_cad_SendData)
+    i.u8x8_cad_SendSequence                  0x08009c2c   Section        0  u8x8_cad.o(i.u8x8_cad_SendSequence)
+    i.u8x8_cad_StartTransfer                 0x08009c94   Section        0  u8x8_cad.o(i.u8x8_cad_StartTransfer)
+    i.u8x8_d_helper_display_init             0x08009ca4   Section        0  u8x8_display.o(i.u8x8_d_helper_display_init)
+    i.u8x8_d_helper_display_setup_memory     0x08009d04   Section        0  u8x8_display.o(i.u8x8_d_helper_display_setup_memory)
+    i.u8x8_d_ssd1306_128x64_noname           0x08009d10   Section        0  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_128x64_noname)
+    i.u8x8_d_ssd1306_sh1106_generic          0x08009d4c   Section        0  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_sh1106_generic)
+    u8x8_d_ssd1306_sh1106_generic            0x08009d4d   Thumb Code   196  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_sh1106_generic)
+    i.u8x8_dummy_cb                          0x08009e14   Section        0  u8x8_setup.o(i.u8x8_dummy_cb)
+    i.u8x8_gpio_call                         0x08009e18   Section        0  u8x8_gpio.o(i.u8x8_gpio_call)
+    i.u8x8_stm32_gpio_and_delay              0x08009e24   Section        0  gui.o(i.u8x8_stm32_gpio_and_delay)
+    i.u8x8_utf8_init                         0x08009e58   Section        0  u8x8_8x8.o(i.u8x8_utf8_init)
+    i.value                                  0x08009e60   Section        0  calc.o(i.value)
+    i.value_3                                0x08009e80   Section        0  calc.o(i.value_3)
+    i.value_4                                0x08009ef0   Section        0  calc.o(i.value_4)
+    i.work                                   0x08009f94   Section        0  calc.o(i.work)
+    .constdata                               0x0800a13c   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x0800a14c   Section        8  system_stm32f1xx.o(.constdata)
+    .constdata                               0x0800a154   Section     1989  u8g2_fonts.o(.constdata)
+    .constdata                               0x0800a91c   Section       12  u8g2_setup.o(.constdata)
+    .constdata                               0x0800a928   Section      344  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_noname_powersave0_seq 0x0800a928   Data           5  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_noname_powersave1_seq 0x0800a92d   Data           5  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_noname_flip0_seq   0x0800a932   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_noname_flip1_seq   0x0800a939   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1312_128x64_noname_flip0_seq   0x0800a940   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1312_128x64_noname_flip1_seq   0x0800a947   Data           7  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_noname_init_seq    0x0800a94e   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_vcomh0_init_seq    0x0800a983   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1306_128x64_alt0_init_seq      0x0800a9b8   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_sh1106_128x64_winstar_init_seq    0x0800a9ed   Data          45  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_d_ssd1312_128x64_noname_init_seq    0x0800aa1a   Data          53  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_ssd1306_128x64_noname_display_info  0x0800aa50   Data          24  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    u8x8_sh1106_128x64_noname_display_info   0x0800aa68   Data          24  u8x8_d_ssd1306_128x64_noname.o(.constdata)
+    .constdata                               0x0800aa80   Section       80  acos.o(.constdata)
+    pS                                       0x0800aa80   Data          48  acos.o(.constdata)
+    qS                                       0x0800aab0   Data          32  acos.o(.constdata)
+    .constdata                               0x0800aad0   Section       80  asin.o(.constdata)
+    pS                                       0x0800aad0   Data          48  asin.o(.constdata)
+    qS                                       0x0800ab00   Data          32  asin.o(.constdata)
+    .constdata                               0x0800ab20   Section      152  atan.o(.constdata)
+    atanhi                                   0x0800ab20   Data          32  atan.o(.constdata)
+    atanlo                                   0x0800ab40   Data          32  atan.o(.constdata)
+    aTodd                                    0x0800ab60   Data          40  atan.o(.constdata)
+    aTeven                                   0x0800ab88   Data          48  atan.o(.constdata)
+    .constdata                               0x0800abb8   Section       88  exp.o(.constdata)
+    halF                                     0x0800abb8   Data          16  exp.o(.constdata)
+    ln2HI                                    0x0800abc8   Data          16  exp.o(.constdata)
+    ln2LO                                    0x0800abd8   Data          16  exp.o(.constdata)
+    P                                        0x0800abe8   Data          40  exp.o(.constdata)
+    .constdata                               0x0800ac10   Section       56  log.o(.constdata)
+    Lg2                                      0x0800ac10   Data          24  log.o(.constdata)
+    Lg                                       0x0800ac28   Data          32  log.o(.constdata)
+    .constdata                               0x0800ac48   Section      136  pow.o(.constdata)
+    bp                                       0x0800ac48   Data          16  pow.o(.constdata)
+    dp_h                                     0x0800ac58   Data          16  pow.o(.constdata)
+    dp_l                                     0x0800ac68   Data          16  pow.o(.constdata)
+    L                                        0x0800ac78   Data          48  pow.o(.constdata)
+    P                                        0x0800aca8   Data          40  pow.o(.constdata)
+    .constdata                               0x0800acd0   Section      129  ctype_o.o(.constdata)
+    .constdata                               0x0800ad54   Section        4  ctype_o.o(.constdata)
+    table                                    0x0800ad54   Data           4  ctype_o.o(.constdata)
+    .constdata                               0x0800ad58   Section       48  cos_i.o(.constdata)
+    C                                        0x0800ad58   Data          48  cos_i.o(.constdata)
+    .constdata                               0x0800ad88   Section        8  qnan.o(.constdata)
+    .constdata                               0x0800ad90   Section      200  rred.o(.constdata)
+    pio2s                                    0x0800ad90   Data          48  rred.o(.constdata)
+    twooverpi                                0x0800adc0   Data         152  rred.o(.constdata)
+    .constdata                               0x0800ae58   Section       40  sin_i.o(.constdata)
+    S                                        0x0800ae58   Data          40  sin_i.o(.constdata)
+    .constdata                               0x0800ae80   Section       96  tan_i.o(.constdata)
+    Todd                                     0x0800ae80   Data          48  tan_i.o(.constdata)
+    Teven                                    0x0800aeb0   Data          48  tan_i.o(.constdata)
+    .conststring                             0x0800aee0   Section       61  main.o(.conststring)
+    .conststring                             0x0800af20   Section       56  main.o(.conststring)
+    .conststring                             0x0800af58   Section       34  main.o(.conststring)
     .data                                    0x20000000   Section       40  calc.o(.data)
     .data                                    0x20000028   Section      136  gui.o(.data)
     i                                        0x20000060   Data           4  gui.o(.data)
@@ -5850,128 +5853,128 @@ Image Symbol Table
     add                                      0x08003c11   Thumb Code    62  comp.o(i.add)
     asin                                     0x08003c51   Thumb Code   572  asin.o(i.asin)
     atan                                     0x08003ec1   Thumb Code   474  atan.o(i.atan)
-    calc                                     0x080040e1   Thumb Code   998  calc.o(i.calc)
-    calc_d                                   0x080044f1   Thumb Code   880  calc.o(i.calc_d)
-    calc_def                                 0x0800488d   Thumb Code   174  calc.o(i.calc_def)
-    calc_work                                0x08004949   Thumb Code   230  comp.o(i.calc_work)
-    comp_calc                                0x08004a3d   Thumb Code   798  comp.o(i.comp_calc)
-    cos                                      0x08004d75   Thumb Code   148  cos.o(i.cos)
-    divi                                     0x08004e11   Thumb Code   128  comp.o(i.divi)
-    exp                                      0x08004e91   Thumb Code   554  exp.o(i.exp)
-    fact                                     0x08005115   Thumb Code    66  calc.o(i.fact)
-    fputc                                    0x0800515d   Thumb Code    20  main.o(i.fputc)
-    gui_run                                  0x08005175   Thumb Code    34  gui.o(i.gui_run)
-    is_op                                    0x08005197   Thumb Code    28  calc.o(i.is_op)
-    key_init                                 0x080051b5   Thumb Code    42  gui.o(i.key_init)
-    key_scan_lr                              0x080051e5   Thumb Code   184  gui.o(i.key_scan_lr)
-    key_scan_ud                              0x080052b5   Thumb Code   574  gui.o(i.key_scan_ud)
-    log                                      0x08005529   Thumb Code   808  log.o(i.log)
-    log_v                                    0x08005885   Thumb Code    40  value.o(i.log_v)
-    main                                     0x080058ad   Thumb Code   322  main.o(i.main)
-    minus                                    0x08005a05   Thumb Code    62  comp.o(i.minus)
-    mul                                      0x08005a43   Thumb Code   114  comp.o(i.mul)
-    pow                                      0x08005ab5   Thumb Code  2512  pow.o(i.pow)
-    show_calc_menu                           0x0800648d   Thumb Code   786  gui.o(i.show_calc_menu)
-    show_comp_calc                           0x08006869   Thumb Code   614  gui.o(i.show_comp_calc)
-    show_cub_calc                            0x08006b05   Thumb Code   590  gui.o(i.show_cub_calc)
-    show_def_solu                            0x08006d9d   Thumb Code   756  gui.o(i.show_def_solu)
-    show_equa_menu                           0x08007169   Thumb Code   236  gui.o(i.show_equa_menu)
-    show_func_menu                           0x0800728d   Thumb Code   234  gui.o(i.show_func_menu)
-    show_func_solu                           0x080073b1   Thumb Code   536  gui.o(i.show_func_solu)
-    show_main_menu                           0x08007685   Thumb Code   192  gui.o(i.show_main_menu)
-    show_quad_calc                           0x08007779   Thumb Code   784  gui.o(i.show_quad_calc)
-    show_quar_calc                           0x08007af9   Thumb Code   694  gui.o(i.show_quar_calc)
-    show_sub0_menu                           0x08007e01   Thumb Code   242  gui.o(i.show_sub0_menu)
-    show_sub1_menu                           0x08007f1d   Thumb Code   242  gui.o(i.show_sub1_menu)
-    show_sub2_menu                           0x08008039   Thumb Code   242  gui.o(i.show_sub2_menu)
-    show_sub3_menu                           0x08008155   Thumb Code   242  gui.o(i.show_sub3_menu)
-    show_sub4_menu                           0x08008271   Thumb Code   242  gui.o(i.show_sub4_menu)
-    show_sub5_menu                           0x0800838d   Thumb Code   242  gui.o(i.show_sub5_menu)
-    show_sub6_menu                           0x080084a9   Thumb Code   376  gui.o(i.show_sub6_menu)
-    show_sub7_menu                           0x0800864d   Thumb Code   242  gui.o(i.show_sub7_menu)
-    show_sub8_menu                           0x08008765   Thumb Code   242  gui.o(i.show_sub8_menu)
-    show_sub9_menu                           0x0800887d   Thumb Code   372  gui.o(i.show_sub9_menu)
-    sin                                      0x08008a1d   Thumb Code   150  sin.o(i.sin)
-    solve                                    0x08008abd   Thumb Code   258  calc.o(i.solve)
-    solve_3                                  0x08008be5   Thumb Code   182  calc.o(i.solve_3)
-    solve_4                                  0x08008cad   Thumb Code   230  calc.o(i.solve_4)
-    sqrt                                     0x08008da5   Thumb Code    76  sqrt.o(i.sqrt)
-    strtod                                   0x08008df1   Thumb Code    28  strtod.o(i.strtod)
-    tan                                      0x08008e0d   Thumb Code    90  tan.o(i.tan)
-    trans_pin                                0x08008e71   Thumb Code    28  gui.o(i.trans_pin)
-    u8g2Init                                 0x08008e8d   Thumb Code    32  gui.o(i.u8g2Init)
-    u8g2_ClearBuffer                         0x08008eb9   Thumb Code    18  u8g2_buffer.o(i.u8g2_ClearBuffer)
-    u8g2_DrawCircle                          0x08008ecb   Thumb Code    64  u8g2_circle.o(i.u8g2_DrawCircle)
-    u8g2_DrawGlyph                           0x08008f0b   Thumb Code   112  u8g2_font.o(i.u8g2_DrawGlyph)
-    u8g2_DrawHLine                           0x08008f7b   Thumb Code    12  u8g2_hvline.o(i.u8g2_DrawHLine)
-    u8g2_DrawHVLine                          0x08008f89   Thumb Code   172  u8g2_hvline.o(i.u8g2_DrawHVLine)
-    u8g2_DrawPixel                           0x08009035   Thumb Code    46  u8g2_hvline.o(i.u8g2_DrawPixel)
-    u8g2_DrawRFrame                          0x08009063   Thumb Code   258  u8g2_box.o(i.u8g2_DrawRFrame)
-    u8g2_DrawStr                             0x08009165   Thumb Code    12  u8g2_font.o(i.u8g2_DrawStr)
-    u8g2_DrawVLine                           0x08009175   Thumb Code    12  u8g2_hvline.o(i.u8g2_DrawVLine)
-    u8g2_FirstPage                           0x08009181   Thumb Code    28  u8g2_buffer.o(i.u8g2_FirstPage)
-    u8g2_IsIntersection                      0x0800919d   Thumb Code    48  u8g2_intersection.o(i.u8g2_IsIntersection)
-    u8g2_NextPage                            0x080091cd   Thumb Code    62  u8g2_buffer.o(i.u8g2_NextPage)
-    u8g2_SetBufferCurrTileRow                0x0800920b   Thumb Code    28  u8g2_buffer.o(i.u8g2_SetBufferCurrTileRow)
-    u8g2_SetFont                             0x08009227   Thumb Code    32  u8g2_font.o(i.u8g2_SetFont)
-    u8g2_SetFontPosBaseline                  0x08009249   Thumb Code     6  u8g2_font.o(i.u8g2_SetFontPosBaseline)
-    u8g2_SetMaxClipWindow                    0x08009255   Thumb Code    28  u8g2_setup.o(i.u8g2_SetMaxClipWindow)
-    u8g2_SetupBuffer                         0x08009271   Thumb Code    70  u8g2_setup.o(i.u8g2_SetupBuffer)
-    u8g2_Setup_ssd1306_128x64_noname_f       0x080092b9   Thumb Code    42  u8g2_d_setup.o(i.u8g2_Setup_ssd1306_128x64_noname_f)
-    u8g2_UpdateRefHeight                     0x080092f1   Thumb Code    82  u8g2_font.o(i.u8g2_UpdateRefHeight)
-    u8g2_add_vector_x                        0x08009343   Thumb Code    28  u8g2_font.o(i.u8g2_add_vector_x)
-    u8g2_add_vector_y                        0x0800935f   Thumb Code    28  u8g2_font.o(i.u8g2_add_vector_y)
-    u8g2_draw_hv_line_2dir                   0x08009549   Thumb Code    18  u8g2_hvline.o(i.u8g2_draw_hv_line_2dir)
-    u8g2_draw_l90_r0                         0x0800955b   Thumb Code    12  u8g2_setup.o(i.u8g2_draw_l90_r0)
-    u8g2_font_calc_vref_font                 0x080095dd   Thumb Code     4  u8g2_font.o(i.u8g2_font_calc_vref_font)
-    u8g2_font_decode_get_signed_bits         0x080095e1   Thumb Code    20  u8g2_font.o(i.u8g2_font_decode_get_signed_bits)
-    u8g2_font_decode_get_unsigned_bits       0x080095f5   Thumb Code    52  u8g2_font.o(i.u8g2_font_decode_get_unsigned_bits)
-    u8g2_font_decode_glyph                   0x08009629   Thumb Code   276  u8g2_font.o(i.u8g2_font_decode_glyph)
-    u8g2_font_decode_len                     0x0800973d   Thumb Code   140  u8g2_font.o(i.u8g2_font_decode_len)
-    u8g2_font_get_glyph_data                 0x080097c9   Thumb Code   114  u8g2_font.o(i.u8g2_font_get_glyph_data)
-    u8g2_is_intersection_decision_tree       0x08009883   Thumb Code    24  u8g2_intersection.o(i.u8g2_is_intersection_decision_tree)
-    u8g2_ll_hvline_vertical_top_lsb          0x0800989d   Thumb Code   144  u8g2_ll_hvline.o(i.u8g2_ll_hvline_vertical_top_lsb)
-    u8g2_m_16_8_f                            0x0800992d   Thumb Code     8  u8g2_d_memory.o(i.u8g2_m_16_8_f)
-    u8g2_read_font_info                      0x08009939   Thumb Code   106  u8g2_font.o(i.u8g2_read_font_info)
-    u8g2_update_dimension_r0                 0x08009a37   Thumb Code     4  u8g2_setup.o(i.u8g2_update_dimension_r0)
-    u8g2_update_page_win_r0                  0x08009a3b   Thumb Code    34  u8g2_setup.o(i.u8g2_update_page_win_r0)
-    u8x8_DrawTile                            0x08009a5d   Thumb Code    30  u8x8_display.o(i.u8x8_DrawTile)
-    u8x8_InitDisplay                         0x08009a7b   Thumb Code    16  u8x8_display.o(i.u8x8_InitDisplay)
-    u8x8_RefreshDisplay                      0x08009a8b   Thumb Code    16  u8x8_display.o(i.u8x8_RefreshDisplay)
-    u8x8_SetPowerSave                        0x08009a9b   Thumb Code    16  u8x8_display.o(i.u8x8_SetPowerSave)
-    u8x8_Setup                               0x08009aab   Thumb Code    34  u8x8_setup.o(i.u8x8_Setup)
-    u8x8_SetupDefaults                       0x08009acd   Thumb Code    32  u8x8_setup.o(i.u8x8_SetupDefaults)
-    u8x8_SetupMemory                         0x08009af1   Thumb Code    16  u8x8_display.o(i.u8x8_SetupMemory)
-    u8x8_ascii_next                          0x08009b01   Thumb Code    14  u8x8_8x8.o(i.u8x8_ascii_next)
-    u8x8_byte_4wire_hw_spi                   0x08009b11   Thumb Code    58  gui.o(i.u8x8_byte_4wire_hw_spi)
-    u8x8_byte_SendByte                       0x08009b55   Thumb Code    14  u8x8_byte.o(i.u8x8_byte_SendByte)
-    u8x8_byte_SetDC                          0x08009b63   Thumb Code    16  u8x8_byte.o(i.u8x8_byte_SetDC)
-    u8x8_cad_001                             0x08009b73   Thumb Code    82  u8x8_cad.o(i.u8x8_cad_001)
-    u8x8_cad_EndTransfer                     0x08009bc5   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_EndTransfer)
-    u8x8_cad_SendArg                         0x08009bd5   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendArg)
-    u8x8_cad_SendCmd                         0x08009be5   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendCmd)
-    u8x8_cad_SendData                        0x08009bf5   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendData)
-    u8x8_cad_SendSequence                    0x08009c05   Thumb Code   104  u8x8_cad.o(i.u8x8_cad_SendSequence)
-    u8x8_cad_StartTransfer                   0x08009c6d   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_StartTransfer)
-    u8x8_d_helper_display_init               0x08009c7d   Thumb Code    96  u8x8_display.o(i.u8x8_d_helper_display_init)
-    u8x8_d_helper_display_setup_memory       0x08009cdd   Thumb Code    10  u8x8_display.o(i.u8x8_d_helper_display_setup_memory)
-    u8x8_d_ssd1306_128x64_noname             0x08009ce9   Thumb Code    52  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_128x64_noname)
-    u8x8_dummy_cb                            0x08009ded   Thumb Code     4  u8x8_setup.o(i.u8x8_dummy_cb)
-    u8x8_gpio_call                           0x08009df1   Thumb Code    12  u8x8_gpio.o(i.u8x8_gpio_call)
-    u8x8_stm32_gpio_and_delay                0x08009dfd   Thumb Code    46  gui.o(i.u8x8_stm32_gpio_and_delay)
-    u8x8_utf8_init                           0x08009e31   Thumb Code     8  u8x8_8x8.o(i.u8x8_utf8_init)
-    value                                    0x08009e39   Thumb Code    32  calc.o(i.value)
-    value_3                                  0x08009e59   Thumb Code   112  calc.o(i.value_3)
-    value_4                                  0x08009ec9   Thumb Code   162  calc.o(i.value_4)
-    work                                     0x08009f6d   Thumb Code   244  calc.o(i.work)
-    AHBPrescTable                            0x0800a068   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x0800a078   Data           8  system_stm32f1xx.o(.constdata)
-    u8g2_font_6x12_tf                        0x0800a080   Data        1989  u8g2_fonts.o(.constdata)
-    u8g2_cb_r0                               0x0800a848   Data          12  u8g2_setup.o(.constdata)
-    __ctype_table                            0x0800ac00   Data         129  ctype_o.o(.constdata)
-    __mathlib_zero                           0x0800acb8   Data           8  qnan.o(.constdata)
-    Region$$Table$$Base                      0x0800aeac   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800aecc   Number         0  anon$$obj.o(Region$$Table)
+    calc                                     0x080040e1   Thumb Code   980  calc.o(i.calc)
+    calc_d                                   0x080044dd   Thumb Code   880  calc.o(i.calc_d)
+    calc_def                                 0x08004879   Thumb Code   174  calc.o(i.calc_def)
+    calc_work                                0x08004935   Thumb Code   230  comp.o(i.calc_work)
+    comp_calc                                0x08004a29   Thumb Code   798  comp.o(i.comp_calc)
+    cos                                      0x08004d61   Thumb Code   148  cos.o(i.cos)
+    divi                                     0x08004dfd   Thumb Code   128  comp.o(i.divi)
+    exp                                      0x08004e7d   Thumb Code   554  exp.o(i.exp)
+    fact                                     0x08005101   Thumb Code    66  calc.o(i.fact)
+    fputc                                    0x08005149   Thumb Code    20  main.o(i.fputc)
+    gui_run                                  0x08005161   Thumb Code    34  gui.o(i.gui_run)
+    is_op                                    0x08005183   Thumb Code    28  calc.o(i.is_op)
+    key_init                                 0x080051a1   Thumb Code    42  gui.o(i.key_init)
+    key_scan_lr                              0x080051d1   Thumb Code   184  gui.o(i.key_scan_lr)
+    key_scan_ud                              0x080052a1   Thumb Code   574  gui.o(i.key_scan_ud)
+    log                                      0x08005515   Thumb Code   808  log.o(i.log)
+    log_v                                    0x08005871   Thumb Code    40  value.o(i.log_v)
+    main                                     0x08005899   Thumb Code   322  main.o(i.main)
+    minus                                    0x080059f1   Thumb Code    62  comp.o(i.minus)
+    mul                                      0x08005a2f   Thumb Code   114  comp.o(i.mul)
+    pow                                      0x08005aa1   Thumb Code  2512  pow.o(i.pow)
+    show_calc_menu                           0x08006479   Thumb Code   830  gui.o(i.show_calc_menu)
+    show_comp_calc                           0x08006885   Thumb Code   614  gui.o(i.show_comp_calc)
+    show_cub_calc                            0x08006b21   Thumb Code   590  gui.o(i.show_cub_calc)
+    show_def_solu                            0x08006db9   Thumb Code   766  gui.o(i.show_def_solu)
+    show_equa_menu                           0x08007191   Thumb Code   236  gui.o(i.show_equa_menu)
+    show_func_menu                           0x080072b5   Thumb Code   234  gui.o(i.show_func_menu)
+    show_func_solu                           0x080073d9   Thumb Code   536  gui.o(i.show_func_solu)
+    show_main_menu                           0x080076ad   Thumb Code   192  gui.o(i.show_main_menu)
+    show_quad_calc                           0x080077a1   Thumb Code   784  gui.o(i.show_quad_calc)
+    show_quar_calc                           0x08007b21   Thumb Code   694  gui.o(i.show_quar_calc)
+    show_sub0_menu                           0x08007e29   Thumb Code   242  gui.o(i.show_sub0_menu)
+    show_sub1_menu                           0x08007f45   Thumb Code   242  gui.o(i.show_sub1_menu)
+    show_sub2_menu                           0x08008061   Thumb Code   242  gui.o(i.show_sub2_menu)
+    show_sub3_menu                           0x0800817d   Thumb Code   242  gui.o(i.show_sub3_menu)
+    show_sub4_menu                           0x08008299   Thumb Code   242  gui.o(i.show_sub4_menu)
+    show_sub5_menu                           0x080083b5   Thumb Code   242  gui.o(i.show_sub5_menu)
+    show_sub6_menu                           0x080084d1   Thumb Code   376  gui.o(i.show_sub6_menu)
+    show_sub7_menu                           0x08008675   Thumb Code   242  gui.o(i.show_sub7_menu)
+    show_sub8_menu                           0x0800878d   Thumb Code   242  gui.o(i.show_sub8_menu)
+    show_sub9_menu                           0x080088a5   Thumb Code   372  gui.o(i.show_sub9_menu)
+    sin                                      0x08008a45   Thumb Code   150  sin.o(i.sin)
+    solve                                    0x08008ae5   Thumb Code   258  calc.o(i.solve)
+    solve_3                                  0x08008c0d   Thumb Code   182  calc.o(i.solve_3)
+    solve_4                                  0x08008cd5   Thumb Code   230  calc.o(i.solve_4)
+    sqrt                                     0x08008dcd   Thumb Code    76  sqrt.o(i.sqrt)
+    strtod                                   0x08008e19   Thumb Code    28  strtod.o(i.strtod)
+    tan                                      0x08008e35   Thumb Code    90  tan.o(i.tan)
+    trans_pin                                0x08008e99   Thumb Code    28  gui.o(i.trans_pin)
+    u8g2Init                                 0x08008eb5   Thumb Code    32  gui.o(i.u8g2Init)
+    u8g2_ClearBuffer                         0x08008ee1   Thumb Code    18  u8g2_buffer.o(i.u8g2_ClearBuffer)
+    u8g2_DrawCircle                          0x08008ef3   Thumb Code    64  u8g2_circle.o(i.u8g2_DrawCircle)
+    u8g2_DrawGlyph                           0x08008f33   Thumb Code   112  u8g2_font.o(i.u8g2_DrawGlyph)
+    u8g2_DrawHLine                           0x08008fa3   Thumb Code    12  u8g2_hvline.o(i.u8g2_DrawHLine)
+    u8g2_DrawHVLine                          0x08008fb1   Thumb Code   172  u8g2_hvline.o(i.u8g2_DrawHVLine)
+    u8g2_DrawPixel                           0x0800905d   Thumb Code    46  u8g2_hvline.o(i.u8g2_DrawPixel)
+    u8g2_DrawRFrame                          0x0800908b   Thumb Code   258  u8g2_box.o(i.u8g2_DrawRFrame)
+    u8g2_DrawStr                             0x0800918d   Thumb Code    12  u8g2_font.o(i.u8g2_DrawStr)
+    u8g2_DrawVLine                           0x0800919d   Thumb Code    12  u8g2_hvline.o(i.u8g2_DrawVLine)
+    u8g2_FirstPage                           0x080091a9   Thumb Code    28  u8g2_buffer.o(i.u8g2_FirstPage)
+    u8g2_IsIntersection                      0x080091c5   Thumb Code    48  u8g2_intersection.o(i.u8g2_IsIntersection)
+    u8g2_NextPage                            0x080091f5   Thumb Code    62  u8g2_buffer.o(i.u8g2_NextPage)
+    u8g2_SetBufferCurrTileRow                0x08009233   Thumb Code    28  u8g2_buffer.o(i.u8g2_SetBufferCurrTileRow)
+    u8g2_SetFont                             0x0800924f   Thumb Code    32  u8g2_font.o(i.u8g2_SetFont)
+    u8g2_SetFontPosBaseline                  0x08009271   Thumb Code     6  u8g2_font.o(i.u8g2_SetFontPosBaseline)
+    u8g2_SetMaxClipWindow                    0x0800927d   Thumb Code    28  u8g2_setup.o(i.u8g2_SetMaxClipWindow)
+    u8g2_SetupBuffer                         0x08009299   Thumb Code    70  u8g2_setup.o(i.u8g2_SetupBuffer)
+    u8g2_Setup_ssd1306_128x64_noname_f       0x080092e1   Thumb Code    42  u8g2_d_setup.o(i.u8g2_Setup_ssd1306_128x64_noname_f)
+    u8g2_UpdateRefHeight                     0x08009319   Thumb Code    82  u8g2_font.o(i.u8g2_UpdateRefHeight)
+    u8g2_add_vector_x                        0x0800936b   Thumb Code    28  u8g2_font.o(i.u8g2_add_vector_x)
+    u8g2_add_vector_y                        0x08009387   Thumb Code    28  u8g2_font.o(i.u8g2_add_vector_y)
+    u8g2_draw_hv_line_2dir                   0x08009571   Thumb Code    18  u8g2_hvline.o(i.u8g2_draw_hv_line_2dir)
+    u8g2_draw_l90_r0                         0x08009583   Thumb Code    12  u8g2_setup.o(i.u8g2_draw_l90_r0)
+    u8g2_font_calc_vref_font                 0x08009605   Thumb Code     4  u8g2_font.o(i.u8g2_font_calc_vref_font)
+    u8g2_font_decode_get_signed_bits         0x08009609   Thumb Code    20  u8g2_font.o(i.u8g2_font_decode_get_signed_bits)
+    u8g2_font_decode_get_unsigned_bits       0x0800961d   Thumb Code    52  u8g2_font.o(i.u8g2_font_decode_get_unsigned_bits)
+    u8g2_font_decode_glyph                   0x08009651   Thumb Code   276  u8g2_font.o(i.u8g2_font_decode_glyph)
+    u8g2_font_decode_len                     0x08009765   Thumb Code   140  u8g2_font.o(i.u8g2_font_decode_len)
+    u8g2_font_get_glyph_data                 0x080097f1   Thumb Code   114  u8g2_font.o(i.u8g2_font_get_glyph_data)
+    u8g2_is_intersection_decision_tree       0x080098ab   Thumb Code    24  u8g2_intersection.o(i.u8g2_is_intersection_decision_tree)
+    u8g2_ll_hvline_vertical_top_lsb          0x080098c5   Thumb Code   144  u8g2_ll_hvline.o(i.u8g2_ll_hvline_vertical_top_lsb)
+    u8g2_m_16_8_f                            0x08009955   Thumb Code     8  u8g2_d_memory.o(i.u8g2_m_16_8_f)
+    u8g2_read_font_info                      0x08009961   Thumb Code   106  u8g2_font.o(i.u8g2_read_font_info)
+    u8g2_update_dimension_r0                 0x08009a5f   Thumb Code     4  u8g2_setup.o(i.u8g2_update_dimension_r0)
+    u8g2_update_page_win_r0                  0x08009a63   Thumb Code    34  u8g2_setup.o(i.u8g2_update_page_win_r0)
+    u8x8_DrawTile                            0x08009a85   Thumb Code    30  u8x8_display.o(i.u8x8_DrawTile)
+    u8x8_InitDisplay                         0x08009aa3   Thumb Code    16  u8x8_display.o(i.u8x8_InitDisplay)
+    u8x8_RefreshDisplay                      0x08009ab3   Thumb Code    16  u8x8_display.o(i.u8x8_RefreshDisplay)
+    u8x8_SetPowerSave                        0x08009ac3   Thumb Code    16  u8x8_display.o(i.u8x8_SetPowerSave)
+    u8x8_Setup                               0x08009ad3   Thumb Code    34  u8x8_setup.o(i.u8x8_Setup)
+    u8x8_SetupDefaults                       0x08009af5   Thumb Code    32  u8x8_setup.o(i.u8x8_SetupDefaults)
+    u8x8_SetupMemory                         0x08009b19   Thumb Code    16  u8x8_display.o(i.u8x8_SetupMemory)
+    u8x8_ascii_next                          0x08009b29   Thumb Code    14  u8x8_8x8.o(i.u8x8_ascii_next)
+    u8x8_byte_4wire_hw_spi                   0x08009b39   Thumb Code    58  gui.o(i.u8x8_byte_4wire_hw_spi)
+    u8x8_byte_SendByte                       0x08009b7d   Thumb Code    14  u8x8_byte.o(i.u8x8_byte_SendByte)
+    u8x8_byte_SetDC                          0x08009b8b   Thumb Code    16  u8x8_byte.o(i.u8x8_byte_SetDC)
+    u8x8_cad_001                             0x08009b9b   Thumb Code    82  u8x8_cad.o(i.u8x8_cad_001)
+    u8x8_cad_EndTransfer                     0x08009bed   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_EndTransfer)
+    u8x8_cad_SendArg                         0x08009bfd   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendArg)
+    u8x8_cad_SendCmd                         0x08009c0d   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendCmd)
+    u8x8_cad_SendData                        0x08009c1d   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_SendData)
+    u8x8_cad_SendSequence                    0x08009c2d   Thumb Code   104  u8x8_cad.o(i.u8x8_cad_SendSequence)
+    u8x8_cad_StartTransfer                   0x08009c95   Thumb Code    16  u8x8_cad.o(i.u8x8_cad_StartTransfer)
+    u8x8_d_helper_display_init               0x08009ca5   Thumb Code    96  u8x8_display.o(i.u8x8_d_helper_display_init)
+    u8x8_d_helper_display_setup_memory       0x08009d05   Thumb Code    10  u8x8_display.o(i.u8x8_d_helper_display_setup_memory)
+    u8x8_d_ssd1306_128x64_noname             0x08009d11   Thumb Code    52  u8x8_d_ssd1306_128x64_noname.o(i.u8x8_d_ssd1306_128x64_noname)
+    u8x8_dummy_cb                            0x08009e15   Thumb Code     4  u8x8_setup.o(i.u8x8_dummy_cb)
+    u8x8_gpio_call                           0x08009e19   Thumb Code    12  u8x8_gpio.o(i.u8x8_gpio_call)
+    u8x8_stm32_gpio_and_delay                0x08009e25   Thumb Code    46  gui.o(i.u8x8_stm32_gpio_and_delay)
+    u8x8_utf8_init                           0x08009e59   Thumb Code     8  u8x8_8x8.o(i.u8x8_utf8_init)
+    value                                    0x08009e61   Thumb Code    32  calc.o(i.value)
+    value_3                                  0x08009e81   Thumb Code   112  calc.o(i.value_3)
+    value_4                                  0x08009ef1   Thumb Code   162  calc.o(i.value_4)
+    work                                     0x08009f95   Thumb Code   398  calc.o(i.work)
+    AHBPrescTable                            0x0800a13c   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x0800a14c   Data           8  system_stm32f1xx.o(.constdata)
+    u8g2_font_6x12_tf                        0x0800a154   Data        1989  u8g2_fonts.o(.constdata)
+    u8g2_cb_r0                               0x0800a91c   Data          12  u8g2_setup.o(.constdata)
+    __ctype_table                            0x0800acd0   Data         129  ctype_o.o(.constdata)
+    __mathlib_zero                           0x0800ad88   Data           8  qnan.o(.constdata)
+    Region$$Table$$Base                      0x0800af7c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0800af9c   Number         0  anon$$obj.o(Region$$Table)
     legal                                    0x20000000   Data           1  calc.o(.data)
     top_int                                  0x20000004   Data           4  calc.o(.data)
     top_op                                   0x20000008   Data           4  calc.o(.data)
@@ -6070,364 +6073,363 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000b0cc, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x0000af58])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000b19c, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x0000b02c])
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000aecc, Max: 0x00020000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000af9c, Max: 0x00020000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x000000ec   Data   RO            3    RESET               startup_stm32f103xb.o
-    0x080000ec   0x00000000   Code   RO         7590  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080000ec   0x00000004   Code   RO         7953    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080000f0   0x00000004   Code   RO         7956    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080000f4   0x00000000   Code   RO         7958    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080000f4   0x00000000   Code   RO         7960    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080000f4   0x00000008   Code   RO         7961    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080000fc   0x00000000   Code   RO         7963    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080000fc   0x00000000   Code   RO         7965    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080000fc   0x00000004   Code   RO         7954    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080000ec   0x00000000   Code   RO         7594  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x00000004   Code   RO         7957    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x00000004   Code   RO         7960    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x00000000   Code   RO         7962    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x00000000   Code   RO         7964    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x00000008   Code   RO         7965    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x00000000   Code   RO         7967    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x00000000   Code   RO         7969    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x00000004   Code   RO         7958    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000100   0x00000024   Code   RO            4    .text               startup_stm32f103xb.o
-    0x08000124   0x00000020   Code   RO         7593    .text               mc_w.l(llushr.o)
-    0x08000144   0x00000008   Code   RO         7595    .text               mc_w.l(ctype_o.o)
-    0x0800014c   0x00000012   Code   RO         7617    .text               mc_w.l(isspace_o.o)
-    0x0800015e   0x00000024   Code   RO         7623    .text               mc_w.l(memseta.o)
-    0x08000182   0x00000018   Code   RO         7625    .text               mc_w.l(strcat.o)
-    0x0800019a   0x0000000e   Code   RO         7627    .text               mc_w.l(strlen.o)
-    0x080001a8   0x00000012   Code   RO         7629    .text               mc_w.l(strcpy.o)
-    0x080001ba   0x0000014e   Code   RO         7892    .text               mf_w.l(dadd.o)
-    0x08000308   0x000000e4   Code   RO         7894    .text               mf_w.l(dmul.o)
-    0x080003ec   0x000000de   Code   RO         7896    .text               mf_w.l(ddiv.o)
-    0x080004ca   0x0000002e   Code   RO         7898    .text               mf_w.l(dscalb.o)
-    0x080004f8   0x00000022   Code   RO         7900    .text               mf_w.l(dflti.o)
-    0x0800051a   0x0000001a   Code   RO         7902    .text               mf_w.l(dfltui.o)
-    0x08000534   0x00000030   Code   RO         7904    .text               mf_w.l(cdcmple.o)
-    0x08000564   0x00000030   Code   RO         7906    .text               mf_w.l(cdrcmple.o)
-    0x08000594   0x0000002c   Code   RO         7968    .text               mc_w.l(uidiv.o)
-    0x080005c0   0x00000062   Code   RO         7970    .text               mc_w.l(uldiv.o)
-    0x08000622   0x0000001e   Code   RO         7972    .text               mc_w.l(llshl.o)
-    0x08000640   0x00000024   Code   RO         7974    .text               mc_w.l(llsshr.o)
-    0x08000664   0x0000009c   Code   RO         7983    .text               mc_w.l(strtod.o)
-    0x08000700   0x00000000   Code   RO         7985    .text               mc_w.l(iusefp.o)
-    0x08000700   0x000000ba   Code   RO         7986    .text               mf_w.l(depilogue.o)
-    0x080007ba   0x000000a2   Code   RO         7988    .text               mf_w.l(dsqrt.o)
-    0x0800085c   0x0000003e   Code   RO         7990    .text               mf_w.l(dfixi.o)
-    0x0800089a   0x00000030   Code   RO         7992    .text               mf_w.l(dfixul.o)
+    0x08000124   0x00000020   Code   RO         7597    .text               mc_w.l(llushr.o)
+    0x08000144   0x00000008   Code   RO         7599    .text               mc_w.l(ctype_o.o)
+    0x0800014c   0x00000012   Code   RO         7621    .text               mc_w.l(isspace_o.o)
+    0x0800015e   0x00000024   Code   RO         7627    .text               mc_w.l(memseta.o)
+    0x08000182   0x00000018   Code   RO         7629    .text               mc_w.l(strcat.o)
+    0x0800019a   0x0000000e   Code   RO         7631    .text               mc_w.l(strlen.o)
+    0x080001a8   0x00000012   Code   RO         7633    .text               mc_w.l(strcpy.o)
+    0x080001ba   0x0000014e   Code   RO         7896    .text               mf_w.l(dadd.o)
+    0x08000308   0x000000e4   Code   RO         7898    .text               mf_w.l(dmul.o)
+    0x080003ec   0x000000de   Code   RO         7900    .text               mf_w.l(ddiv.o)
+    0x080004ca   0x0000002e   Code   RO         7902    .text               mf_w.l(dscalb.o)
+    0x080004f8   0x00000022   Code   RO         7904    .text               mf_w.l(dflti.o)
+    0x0800051a   0x0000001a   Code   RO         7906    .text               mf_w.l(dfltui.o)
+    0x08000534   0x00000030   Code   RO         7908    .text               mf_w.l(cdcmple.o)
+    0x08000564   0x00000030   Code   RO         7910    .text               mf_w.l(cdrcmple.o)
+    0x08000594   0x0000002c   Code   RO         7972    .text               mc_w.l(uidiv.o)
+    0x080005c0   0x00000062   Code   RO         7974    .text               mc_w.l(uldiv.o)
+    0x08000622   0x0000001e   Code   RO         7976    .text               mc_w.l(llshl.o)
+    0x08000640   0x00000024   Code   RO         7978    .text               mc_w.l(llsshr.o)
+    0x08000664   0x0000009c   Code   RO         7987    .text               mc_w.l(strtod.o)
+    0x08000700   0x00000000   Code   RO         7989    .text               mc_w.l(iusefp.o)
+    0x08000700   0x000000ba   Code   RO         7990    .text               mf_w.l(depilogue.o)
+    0x080007ba   0x000000a2   Code   RO         7992    .text               mf_w.l(dsqrt.o)
+    0x0800085c   0x0000003e   Code   RO         7994    .text               mf_w.l(dfixi.o)
+    0x0800089a   0x00000030   Code   RO         7996    .text               mf_w.l(dfixul.o)
     0x080008ca   0x00000002   PAD
-    0x080008cc   0x00000024   Code   RO         7994    .text               mc_w.l(init.o)
-    0x080008f0   0x00000338   Code   RO         7998    .text               mc_w.l(scanf_fp.o)
-    0x08000c28   0x00000040   Code   RO         8002    .text               mc_w.l(_sgetc.o)
-    0x08000c68   0x00000018   Code   RO         8007    .text               mf_w.l(dfltul.o)
-    0x08000c80   0x00000038   Code   RO         8009    .text               mf_w.l(d2f.o)
-    0x08000cb8   0x0000006e   Code   RO         8011    .text               mf_w.l(fepilogue.o)
-    0x08000d26   0x00000056   Code   RO         8021    .text               mc_w.l(__dczerorl2.o)
-    0x08000d7c   0x00000002   Code   RO          962    i.BusFault_Handler  stm32f1xx_it.o
+    0x080008cc   0x00000024   Code   RO         7998    .text               mc_w.l(init.o)
+    0x080008f0   0x00000338   Code   RO         8002    .text               mc_w.l(scanf_fp.o)
+    0x08000c28   0x00000040   Code   RO         8006    .text               mc_w.l(_sgetc.o)
+    0x08000c68   0x00000018   Code   RO         8011    .text               mf_w.l(dfltul.o)
+    0x08000c80   0x00000038   Code   RO         8013    .text               mf_w.l(d2f.o)
+    0x08000cb8   0x0000006e   Code   RO         8015    .text               mf_w.l(fepilogue.o)
+    0x08000d26   0x00000056   Code   RO         8025    .text               mc_w.l(__dczerorl2.o)
+    0x08000d7c   0x00000002   Code   RO          966    i.BusFault_Handler  stm32f1xx_it.o
     0x08000d7e   0x00000002   PAD
-    0x08000d80   0x0000000c   Code   RO          963    i.DMA1_Channel3_IRQHandler  stm32f1xx_it.o
-    0x08000d8c   0x00000002   Code   RO          964    i.DebugMon_Handler  stm32f1xx_it.o
-    0x08000d8e   0x00000004   Code   RO          708    i.Error_Handler     main.o
-    0x08000d92   0x00000046   Code   RO         1874    i.HAL_DMA_Abort     stm32f1xx_hal_dma.o
-    0x08000dd8   0x00000098   Code   RO         1875    i.HAL_DMA_Abort_IT  stm32f1xx_hal_dma.o
-    0x08000e70   0x00000154   Code   RO         1879    i.HAL_DMA_IRQHandler  stm32f1xx_hal_dma.o
-    0x08000fc4   0x0000005c   Code   RO         1880    i.HAL_DMA_Init      stm32f1xx_hal_dma.o
-    0x08001020   0x00000024   Code   RO         1502    i.HAL_Delay         stm32f1xx_hal.o
-    0x08001044   0x000001e0   Code   RO         1810    i.HAL_GPIO_Init     stm32f1xx_hal_gpio.o
-    0x08001224   0x0000000a   Code   RO         1812    i.HAL_GPIO_ReadPin  stm32f1xx_hal_gpio.o
-    0x0800122e   0x0000000a   Code   RO         1814    i.HAL_GPIO_WritePin  stm32f1xx_hal_gpio.o
-    0x08001238   0x0000000c   Code   RO         1506    i.HAL_GetTick       stm32f1xx_hal.o
-    0x08001244   0x00000010   Code   RO         1512    i.HAL_IncTick       stm32f1xx_hal.o
-    0x08001254   0x00000024   Code   RO         1513    i.HAL_Init          stm32f1xx_hal.o
-    0x08001278   0x00000040   Code   RO         1514    i.HAL_InitTick      stm32f1xx_hal.o
-    0x080012b8   0x0000003c   Code   RO         1050    i.HAL_MspInit       stm32f1xx_hal_msp.o
-    0x080012f4   0x0000001a   Code   RO         1970    i.HAL_NVIC_EnableIRQ  stm32f1xx_hal_cortex.o
+    0x08000d80   0x0000000c   Code   RO          967    i.DMA1_Channel3_IRQHandler  stm32f1xx_it.o
+    0x08000d8c   0x00000002   Code   RO          968    i.DebugMon_Handler  stm32f1xx_it.o
+    0x08000d8e   0x00000004   Code   RO          712    i.Error_Handler     main.o
+    0x08000d92   0x00000046   Code   RO         1878    i.HAL_DMA_Abort     stm32f1xx_hal_dma.o
+    0x08000dd8   0x00000098   Code   RO         1879    i.HAL_DMA_Abort_IT  stm32f1xx_hal_dma.o
+    0x08000e70   0x00000154   Code   RO         1883    i.HAL_DMA_IRQHandler  stm32f1xx_hal_dma.o
+    0x08000fc4   0x0000005c   Code   RO         1884    i.HAL_DMA_Init      stm32f1xx_hal_dma.o
+    0x08001020   0x00000024   Code   RO         1506    i.HAL_Delay         stm32f1xx_hal.o
+    0x08001044   0x000001e0   Code   RO         1814    i.HAL_GPIO_Init     stm32f1xx_hal_gpio.o
+    0x08001224   0x0000000a   Code   RO         1816    i.HAL_GPIO_ReadPin  stm32f1xx_hal_gpio.o
+    0x0800122e   0x0000000a   Code   RO         1818    i.HAL_GPIO_WritePin  stm32f1xx_hal_gpio.o
+    0x08001238   0x0000000c   Code   RO         1510    i.HAL_GetTick       stm32f1xx_hal.o
+    0x08001244   0x00000010   Code   RO         1516    i.HAL_IncTick       stm32f1xx_hal.o
+    0x08001254   0x00000024   Code   RO         1517    i.HAL_Init          stm32f1xx_hal.o
+    0x08001278   0x00000040   Code   RO         1518    i.HAL_InitTick      stm32f1xx_hal.o
+    0x080012b8   0x0000003c   Code   RO         1054    i.HAL_MspInit       stm32f1xx_hal_msp.o
+    0x080012f4   0x0000001a   Code   RO         1974    i.HAL_NVIC_EnableIRQ  stm32f1xx_hal_cortex.o
     0x0800130e   0x00000002   PAD
-    0x08001310   0x00000040   Code   RO         1976    i.HAL_NVIC_SetPriority  stm32f1xx_hal_cortex.o
-    0x08001350   0x00000024   Code   RO         1977    i.HAL_NVIC_SetPriorityGrouping  stm32f1xx_hal_cortex.o
-    0x08001374   0x0000012c   Code   RO         1670    i.HAL_RCC_ClockConfig  stm32f1xx_hal_rcc.o
-    0x080014a0   0x00000020   Code   RO         1677    i.HAL_RCC_GetPCLK1Freq  stm32f1xx_hal_rcc.o
-    0x080014c0   0x00000020   Code   RO         1678    i.HAL_RCC_GetPCLK2Freq  stm32f1xx_hal_rcc.o
-    0x080014e0   0x0000006c   Code   RO         1679    i.HAL_RCC_GetSysClockFreq  stm32f1xx_hal_rcc.o
-    0x0800154c   0x00000320   Code   RO         1682    i.HAL_RCC_OscConfig  stm32f1xx_hal_rcc.o
-    0x0800186c   0x000000b2   Code   RO         1184    i.HAL_SPI_Init      stm32f1xx_hal_spi.o
+    0x08001310   0x00000040   Code   RO         1980    i.HAL_NVIC_SetPriority  stm32f1xx_hal_cortex.o
+    0x08001350   0x00000024   Code   RO         1981    i.HAL_NVIC_SetPriorityGrouping  stm32f1xx_hal_cortex.o
+    0x08001374   0x0000012c   Code   RO         1674    i.HAL_RCC_ClockConfig  stm32f1xx_hal_rcc.o
+    0x080014a0   0x00000020   Code   RO         1681    i.HAL_RCC_GetPCLK1Freq  stm32f1xx_hal_rcc.o
+    0x080014c0   0x00000020   Code   RO         1682    i.HAL_RCC_GetPCLK2Freq  stm32f1xx_hal_rcc.o
+    0x080014e0   0x0000006c   Code   RO         1683    i.HAL_RCC_GetSysClockFreq  stm32f1xx_hal_rcc.o
+    0x0800154c   0x00000320   Code   RO         1686    i.HAL_RCC_OscConfig  stm32f1xx_hal_rcc.o
+    0x0800186c   0x000000b2   Code   RO         1188    i.HAL_SPI_Init      stm32f1xx_hal_spi.o
     0x0800191e   0x00000002   PAD
-    0x08001920   0x00000090   Code   RO          879    i.HAL_SPI_MspInit   spi.o
-    0x080019b0   0x00000166   Code   RO         1192    i.HAL_SPI_Transmit  stm32f1xx_hal_spi.o
-    0x08001b16   0x00000028   Code   RO         1981    i.HAL_SYSTICK_Config  stm32f1xx_hal_cortex.o
-    0x08001b3e   0x00000002   Code   RO         2517    i.HAL_UARTEx_RxEventCallback  stm32f1xx_hal_uart.o
-    0x08001b40   0x00000002   Code   RO         2531    i.HAL_UART_ErrorCallback  stm32f1xx_hal_uart.o
+    0x08001920   0x00000090   Code   RO          883    i.HAL_SPI_MspInit   spi.o
+    0x080019b0   0x00000166   Code   RO         1196    i.HAL_SPI_Transmit  stm32f1xx_hal_spi.o
+    0x08001b16   0x00000028   Code   RO         1985    i.HAL_SYSTICK_Config  stm32f1xx_hal_cortex.o
+    0x08001b3e   0x00000002   Code   RO         2521    i.HAL_UARTEx_RxEventCallback  stm32f1xx_hal_uart.o
+    0x08001b40   0x00000002   Code   RO         2535    i.HAL_UART_ErrorCallback  stm32f1xx_hal_uart.o
     0x08001b42   0x00000002   PAD
-    0x08001b44   0x0000020c   Code   RO         2534    i.HAL_UART_IRQHandler  stm32f1xx_hal_uart.o
-    0x08001d50   0x00000062   Code   RO         2535    i.HAL_UART_Init     stm32f1xx_hal_uart.o
+    0x08001b44   0x0000020c   Code   RO         2538    i.HAL_UART_IRQHandler  stm32f1xx_hal_uart.o
+    0x08001d50   0x00000062   Code   RO         2539    i.HAL_UART_Init     stm32f1xx_hal_uart.o
     0x08001db2   0x00000002   PAD
-    0x08001db4   0x00000080   Code   RO          921    i.HAL_UART_MspInit  usart.o
-    0x08001e34   0x00000002   Code   RO         2541    i.HAL_UART_RxCpltCallback  stm32f1xx_hal_uart.o
+    0x08001db4   0x00000080   Code   RO          925    i.HAL_UART_MspInit  usart.o
+    0x08001e34   0x00000002   Code   RO         2545    i.HAL_UART_RxCpltCallback  stm32f1xx_hal_uart.o
     0x08001e36   0x00000002   PAD
-    0x08001e38   0x000000b2   Code   RO         2543    i.HAL_UART_Transmit  stm32f1xx_hal_uart.o
-    0x08001eea   0x00000002   Code   RO         2546    i.HAL_UART_TxCpltCallback  stm32f1xx_hal_uart.o
-    0x08001eec   0x00000002   Code   RO          965    i.HardFault_Handler  stm32f1xx_it.o
+    0x08001e38   0x000000b2   Code   RO         2547    i.HAL_UART_Transmit  stm32f1xx_hal_uart.o
+    0x08001eea   0x00000002   Code   RO         2550    i.HAL_UART_TxCpltCallback  stm32f1xx_hal_uart.o
+    0x08001eec   0x00000002   Code   RO          969    i.HardFault_Handler  stm32f1xx_it.o
     0x08001eee   0x00000002   PAD
     0x08001ef0   0x00000024   Code   RO          465    i.Key_judge         gui.o
-    0x08001f14   0x0000002c   Code   RO          854    i.MX_DMA_Init       dma.o
-    0x08001f40   0x00000118   Code   RO          830    i.MX_GPIO_Init      gpio.o
-    0x08002058   0x00000048   Code   RO          880    i.MX_SPI1_Init      spi.o
-    0x080020a0   0x00000038   Code   RO          922    i.MX_USART1_UART_Init  usart.o
+    0x08001f14   0x0000002c   Code   RO          858    i.MX_DMA_Init       dma.o
+    0x08001f40   0x00000118   Code   RO          834    i.MX_GPIO_Init      gpio.o
+    0x08002058   0x00000048   Code   RO          884    i.MX_SPI1_Init      spi.o
+    0x080020a0   0x00000038   Code   RO          926    i.MX_USART1_UART_Init  usart.o
     0x080020d8   0x000002f0   Code   RO          324    i.MatrixKey         keyboard.o
-    0x080023c8   0x00000002   Code   RO          966    i.MemManage_Handler  stm32f1xx_it.o
-    0x080023ca   0x00000002   Code   RO          967    i.NMI_Handler       stm32f1xx_it.o
-    0x080023cc   0x00000002   Code   RO          968    i.PendSV_Handler    stm32f1xx_it.o
-    0x080023ce   0x00000020   Code   RO         1222    i.SPI_EndRxTxTransaction  stm32f1xx_hal_spi.o
+    0x080023c8   0x00000002   Code   RO          970    i.MemManage_Handler  stm32f1xx_it.o
+    0x080023ca   0x00000002   Code   RO          971    i.NMI_Handler       stm32f1xx_it.o
+    0x080023cc   0x00000002   Code   RO          972    i.PendSV_Handler    stm32f1xx_it.o
+    0x080023ce   0x00000020   Code   RO         1226    i.SPI_EndRxTxTransaction  stm32f1xx_hal_spi.o
     0x080023ee   0x00000002   PAD
-    0x080023f0   0x000000b8   Code   RO         1227    i.SPI_WaitFlagStateUntilTimeout  stm32f1xx_hal_spi.o
-    0x080024a8   0x00000002   Code   RO          969    i.SVC_Handler       stm32f1xx_it.o
-    0x080024aa   0x00000004   Code   RO          970    i.SysTick_Handler   stm32f1xx_it.o
-    0x080024ae   0x0000005e   Code   RO          709    i.SystemClock_Config  main.o
-    0x0800250c   0x00000002   Code   RO         2864    i.SystemInit        system_stm32f1xx.o
-    0x0800250e   0x00000010   Code   RO         2548    i.UART_DMAAbortOnError  stm32f1xx_hal_uart.o
-    0x0800251e   0x00000030   Code   RO         2558    i.UART_EndRxTransfer  stm32f1xx_hal_uart.o
-    0x0800254e   0x000000b6   Code   RO         2560    i.UART_Receive_IT   stm32f1xx_hal_uart.o
-    0x08002604   0x000000b8   Code   RO         2561    i.UART_SetConfig    stm32f1xx_hal_uart.o
-    0x080026bc   0x00000064   Code   RO         2564    i.UART_WaitOnFlagUntilTimeout  stm32f1xx_hal_uart.o
-    0x08002720   0x0000000c   Code   RO          971    i.USART1_IRQHandler  stm32f1xx_it.o
-    0x0800272c   0x00000002   Code   RO          972    i.UsageFault_Handler  stm32f1xx_it.o
+    0x080023f0   0x000000b8   Code   RO         1231    i.SPI_WaitFlagStateUntilTimeout  stm32f1xx_hal_spi.o
+    0x080024a8   0x00000002   Code   RO          973    i.SVC_Handler       stm32f1xx_it.o
+    0x080024aa   0x00000004   Code   RO          974    i.SysTick_Handler   stm32f1xx_it.o
+    0x080024ae   0x0000005e   Code   RO          713    i.SystemClock_Config  main.o
+    0x0800250c   0x00000002   Code   RO         2868    i.SystemInit        system_stm32f1xx.o
+    0x0800250e   0x00000010   Code   RO         2552    i.UART_DMAAbortOnError  stm32f1xx_hal_uart.o
+    0x0800251e   0x00000030   Code   RO         2562    i.UART_EndRxTransfer  stm32f1xx_hal_uart.o
+    0x0800254e   0x000000b6   Code   RO         2564    i.UART_Receive_IT   stm32f1xx_hal_uart.o
+    0x08002604   0x000000b8   Code   RO         2565    i.UART_SetConfig    stm32f1xx_hal_uart.o
+    0x080026bc   0x00000064   Code   RO         2568    i.UART_WaitOnFlagUntilTimeout  stm32f1xx_hal_uart.o
+    0x08002720   0x0000000c   Code   RO          975    i.USART1_IRQHandler  stm32f1xx_it.o
+    0x0800272c   0x00000002   Code   RO          976    i.UsageFault_Handler  stm32f1xx_it.o
     0x0800272e   0x00000002   PAD
-    0x08002730   0x00000020   Code   RO         7864    i.__0printf         mc_w.l(printfa.o)
-    0x08002750   0x00000028   Code   RO         7866    i.__0sprintf        mc_w.l(printfa.o)
-    0x08002778   0x00000028   Code   RO         7931    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
-    0x080027a0   0x00000020   Code   RO         1983    i.__NVIC_SetPriority  stm32f1xx_hal_cortex.o
-    0x080027c0   0x00000388   Code   RO         7936    i.__ieee754_rem_pio2  m_ws.l(rred.o)
-    0x08002b48   0x000000fc   Code   RO         7908    i.__kernel_cos      m_ws.l(cos_i.o)
-    0x08002c44   0x000000aa   Code   RO         7933    i.__kernel_poly     m_ws.l(poly.o)
+    0x08002730   0x00000020   Code   RO         7868    i.__0printf         mc_w.l(printfa.o)
+    0x08002750   0x00000028   Code   RO         7870    i.__0sprintf        mc_w.l(printfa.o)
+    0x08002778   0x00000028   Code   RO         7935    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
+    0x080027a0   0x00000020   Code   RO         1987    i.__NVIC_SetPriority  stm32f1xx_hal_cortex.o
+    0x080027c0   0x00000388   Code   RO         7940    i.__ieee754_rem_pio2  m_ws.l(rred.o)
+    0x08002b48   0x000000fc   Code   RO         7912    i.__kernel_cos      m_ws.l(cos_i.o)
+    0x08002c44   0x000000aa   Code   RO         7937    i.__kernel_poly     m_ws.l(poly.o)
     0x08002cee   0x00000002   PAD
-    0x08002cf0   0x000000ec   Code   RO         7941    i.__kernel_sin      m_ws.l(sin_i.o)
-    0x08002ddc   0x0000027c   Code   RO         7947    i.__kernel_tan      m_ws.l(tan_i.o)
-    0x08003058   0x00000010   Code   RO         7911    i.__mathlib_dbl_divzero  m_ws.l(dunder.o)
-    0x08003068   0x00000006   Code   RO         7912    i.__mathlib_dbl_infnan  m_ws.l(dunder.o)
-    0x0800306e   0x00000004   Code   RO         7913    i.__mathlib_dbl_infnan2  m_ws.l(dunder.o)
-    0x08003072   0x0000000c   Code   RO         7914    i.__mathlib_dbl_invalid  m_ws.l(dunder.o)
-    0x0800307e   0x0000000e   Code   RO         7915    i.__mathlib_dbl_overflow  m_ws.l(dunder.o)
-    0x0800308c   0x00000010   Code   RO         7917    i.__mathlib_dbl_underflow  m_ws.l(dunder.o)
-    0x0800309c   0x0000000e   Code   RO         8015    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080030aa   0x00000002   Code   RO         8016    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080030ac   0x0000000e   Code   RO         8017    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08002cf0   0x000000ec   Code   RO         7945    i.__kernel_sin      m_ws.l(sin_i.o)
+    0x08002ddc   0x0000027c   Code   RO         7951    i.__kernel_tan      m_ws.l(tan_i.o)
+    0x08003058   0x00000010   Code   RO         7915    i.__mathlib_dbl_divzero  m_ws.l(dunder.o)
+    0x08003068   0x00000006   Code   RO         7916    i.__mathlib_dbl_infnan  m_ws.l(dunder.o)
+    0x0800306e   0x00000004   Code   RO         7917    i.__mathlib_dbl_infnan2  m_ws.l(dunder.o)
+    0x08003072   0x0000000c   Code   RO         7918    i.__mathlib_dbl_invalid  m_ws.l(dunder.o)
+    0x0800307e   0x0000000e   Code   RO         7919    i.__mathlib_dbl_overflow  m_ws.l(dunder.o)
+    0x0800308c   0x00000010   Code   RO         7921    i.__mathlib_dbl_underflow  m_ws.l(dunder.o)
+    0x0800309c   0x0000000e   Code   RO         8019    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080030aa   0x00000002   Code   RO         8020    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080030ac   0x0000000e   Code   RO         8021    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080030ba   0x00000002   PAD
-    0x080030bc   0x0000000c   Code   RO         7978    i.__set_errno       mc_w.l(errno.o)
-    0x080030c8   0x00000184   Code   RO         7871    i._fp_digits        mc_w.l(printfa.o)
-    0x0800324c   0x0000000e   Code   RO         8000    i._is_digit         mc_w.l(scanf_fp.o)
+    0x080030bc   0x0000000c   Code   RO         7982    i.__set_errno       mc_w.l(errno.o)
+    0x080030c8   0x00000184   Code   RO         7875    i._fp_digits        mc_w.l(printfa.o)
+    0x0800324c   0x0000000e   Code   RO         8004    i._is_digit         mc_w.l(scanf_fp.o)
     0x0800325a   0x00000002   PAD
-    0x0800325c   0x000006dc   Code   RO         7872    i._printf_core      mc_w.l(printfa.o)
-    0x08003938   0x00000024   Code   RO         7873    i._printf_post_padding  mc_w.l(printfa.o)
-    0x0800395c   0x0000002e   Code   RO         7874    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0800398a   0x0000000a   Code   RO         7876    i._sputc            mc_w.l(printfa.o)
-    0x08003994   0x0000027c   Code   RO         7467    i.acos              m_ws.l(acos.o)
-    0x08003c10   0x0000003e   Code   RO         1074    i.add               comp.o
+    0x0800325c   0x000006dc   Code   RO         7876    i._printf_core      mc_w.l(printfa.o)
+    0x08003938   0x00000024   Code   RO         7877    i._printf_post_padding  mc_w.l(printfa.o)
+    0x0800395c   0x0000002e   Code   RO         7878    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x0800398a   0x0000000a   Code   RO         7880    i._sputc            mc_w.l(printfa.o)
+    0x08003994   0x0000027c   Code   RO         7471    i.acos              m_ws.l(acos.o)
+    0x08003c10   0x0000003e   Code   RO         1078    i.add               comp.o
     0x08003c4e   0x00000002   PAD
-    0x08003c50   0x00000270   Code   RO         7477    i.asin              m_ws.l(asin.o)
-    0x08003ec0   0x00000220   Code   RO         7487    i.atan              m_ws.l(atan.o)
-    0x080040e0   0x00000410   Code   RO           13    i.calc              calc.o
-    0x080044f0   0x0000039c   Code   RO           14    i.calc_d            calc.o
-    0x0800488c   0x000000bc   Code   RO           15    i.calc_def          calc.o
-    0x08004948   0x000000f4   Code   RO         1075    i.calc_work         comp.o
-    0x08004a3c   0x00000338   Code   RO         1076    i.comp_calc         comp.o
-    0x08004d74   0x0000009c   Code   RO         7497    i.cos               m_ws.l(cos.o)
-    0x08004e10   0x00000080   Code   RO         1077    i.divi              comp.o
-    0x08004e90   0x00000284   Code   RO         7515    i.exp               m_ws.l(exp.o)
-    0x08005114   0x00000048   Code   RO           16    i.fact              calc.o
-    0x0800515c   0x00000018   Code   RO          711    i.fputc             main.o
-    0x08005174   0x00000022   Code   RO          467    i.gui_run           gui.o
-    0x08005196   0x0000001c   Code   RO           17    i.is_op             calc.o
-    0x080051b2   0x00000002   PAD
-    0x080051b4   0x00000030   Code   RO          468    i.key_init          gui.o
-    0x080051e4   0x000000d0   Code   RO          469    i.key_scan_lr       gui.o
-    0x080052b4   0x00000274   Code   RO          470    i.key_scan_ud       gui.o
-    0x08005528   0x0000035c   Code   RO         7525    i.log               m_ws.l(log.o)
-    0x08005884   0x00000028   Code   RO          236    i.log_v             value.o
-    0x080058ac   0x00000158   Code   RO          712    i.main              main.o
-    0x08005a04   0x0000003e   Code   RO         1078    i.minus             comp.o
-    0x08005a42   0x00000072   Code   RO         1079    i.mul               comp.o
-    0x08005ab4   0x000009d8   Code   RO         7535    i.pow               m_ws.l(pow.o)
-    0x0800648c   0x000003dc   Code   RO          471    i.show_calc_menu    gui.o
-    0x08006868   0x0000029c   Code   RO          472    i.show_comp_calc    gui.o
-    0x08006b04   0x00000298   Code   RO          473    i.show_cub_calc     gui.o
-    0x08006d9c   0x000003cc   Code   RO          474    i.show_def_solu     gui.o
-    0x08007168   0x00000124   Code   RO          475    i.show_equa_menu    gui.o
-    0x0800728c   0x00000124   Code   RO          476    i.show_func_menu    gui.o
-    0x080073b0   0x000002d4   Code   RO          477    i.show_func_solu    gui.o
-    0x08007684   0x000000f4   Code   RO          478    i.show_main_menu    gui.o
-    0x08007778   0x00000380   Code   RO          479    i.show_quad_calc    gui.o
-    0x08007af8   0x00000308   Code   RO          480    i.show_quar_calc    gui.o
-    0x08007e00   0x0000011c   Code   RO          481    i.show_sub0_menu    gui.o
-    0x08007f1c   0x0000011c   Code   RO          482    i.show_sub1_menu    gui.o
-    0x08008038   0x0000011c   Code   RO          483    i.show_sub2_menu    gui.o
-    0x08008154   0x0000011c   Code   RO          484    i.show_sub3_menu    gui.o
-    0x08008270   0x0000011c   Code   RO          485    i.show_sub4_menu    gui.o
-    0x0800838c   0x0000011c   Code   RO          486    i.show_sub5_menu    gui.o
-    0x080084a8   0x000001a4   Code   RO          487    i.show_sub6_menu    gui.o
-    0x0800864c   0x00000118   Code   RO          488    i.show_sub7_menu    gui.o
-    0x08008764   0x00000118   Code   RO          489    i.show_sub8_menu    gui.o
-    0x0800887c   0x000001a0   Code   RO          490    i.show_sub9_menu    gui.o
-    0x08008a1c   0x000000a0   Code   RO         7545    i.sin               m_ws.l(sin.o)
-    0x08008abc   0x00000128   Code   RO           18    i.solve             calc.o
-    0x08008be4   0x000000c8   Code   RO           20    i.solve_3           calc.o
-    0x08008cac   0x000000f8   Code   RO           21    i.solve_4           calc.o
-    0x08008da4   0x0000004c   Code   RO         7563    i.sqrt              m_ws.l(sqrt.o)
-    0x08008df0   0x0000001c   Code   RO         7571    i.strtod            m_ws.l(strtod.o)
-    0x08008e0c   0x00000064   Code   RO         7575    i.tan               m_ws.l(tan.o)
-    0x08008e70   0x0000001c   Code   RO          491    i.trans_pin         gui.o
-    0x08008e8c   0x0000002c   Code   RO          492    i.u8g2Init          gui.o
-    0x08008eb8   0x00000012   Code   RO         3576    i.u8g2_ClearBuffer  u8g2_buffer.o
-    0x08008eca   0x00000040   Code   RO         3670    i.u8g2_DrawCircle   u8g2_circle.o
-    0x08008f0a   0x00000070   Code   RO         3785    i.u8g2_DrawGlyph    u8g2_font.o
-    0x08008f7a   0x0000000c   Code   RO         6009    i.u8g2_DrawHLine    u8g2_hvline.o
-    0x08008f86   0x00000002   PAD
-    0x08008f88   0x000000ac   Code   RO         6010    i.u8g2_DrawHVLine   u8g2_hvline.o
-    0x08009034   0x0000002e   Code   RO         6011    i.u8g2_DrawPixel    u8g2_hvline.o
-    0x08009062   0x00000102   Code   RO         3549    i.u8g2_DrawRFrame   u8g2_box.o
-    0x08009164   0x00000010   Code   RO         3787    i.u8g2_DrawStr      u8g2_font.o
-    0x08009174   0x0000000c   Code   RO         6012    i.u8g2_DrawVLine    u8g2_hvline.o
-    0x08009180   0x0000001c   Code   RO         3577    i.u8g2_FirstPage    u8g2_buffer.o
-    0x0800919c   0x00000030   Code   RO         6071    i.u8g2_IsIntersection  u8g2_intersection.o
-    0x080091cc   0x0000003e   Code   RO         3578    i.u8g2_NextPage     u8g2_buffer.o
-    0x0800920a   0x0000001c   Code   RO         3580    i.u8g2_SetBufferCurrTileRow  u8g2_buffer.o
-    0x08009226   0x00000020   Code   RO         3803    i.u8g2_SetFont      u8g2_font.o
-    0x08009246   0x00000002   PAD
-    0x08009248   0x0000000c   Code   RO         3806    i.u8g2_SetFontPosBaseline  u8g2_font.o
-    0x08009254   0x0000001c   Code   RO         6259    i.u8g2_SetMaxClipWindow  u8g2_setup.o
-    0x08009270   0x00000046   Code   RO         6260    i.u8g2_SetupBuffer  u8g2_setup.o
-    0x080092b6   0x00000002   PAD
-    0x080092b8   0x00000038   Code   RO         3765    i.u8g2_Setup_ssd1306_128x64_noname_f  u8g2_d_setup.o
-    0x080092f0   0x00000052   Code   RO         3813    i.u8g2_UpdateRefHeight  u8g2_font.o
-    0x08009342   0x0000001c   Code   RO         3814    i.u8g2_add_vector_x  u8g2_font.o
-    0x0800935e   0x0000001c   Code   RO         3815    i.u8g2_add_vector_y  u8g2_font.o
-    0x0800937a   0x0000006e   Code   RO         6262    i.u8g2_apply_clip_window  u8g2_setup.o
-    0x080093e8   0x0000003c   Code   RO         6014    i.u8g2_clip_intersection2  u8g2_hvline.o
-    0x08009424   0x0000006a   Code   RO         3674    i.u8g2_draw_circle  u8g2_circle.o
-    0x0800948e   0x000000ba   Code   RO         3675    i.u8g2_draw_circle_section  u8g2_circle.o
-    0x08009548   0x00000012   Code   RO         6015    i.u8g2_draw_hv_line_2dir  u8g2_hvline.o
-    0x0800955a   0x0000000c   Code   RO         6264    i.u8g2_draw_l90_r0  u8g2_setup.o
-    0x08009566   0x00000076   Code   RO         3816    i.u8g2_draw_string  u8g2_font.o
-    0x080095dc   0x00000004   Code   RO         3822    i.u8g2_font_calc_vref_font  u8g2_font.o
-    0x080095e0   0x00000014   Code   RO         3824    i.u8g2_font_decode_get_signed_bits  u8g2_font.o
-    0x080095f4   0x00000034   Code   RO         3825    i.u8g2_font_decode_get_unsigned_bits  u8g2_font.o
-    0x08009628   0x00000114   Code   RO         3826    i.u8g2_font_decode_glyph  u8g2_font.o
-    0x0800973c   0x0000008c   Code   RO         3827    i.u8g2_font_decode_len  u8g2_font.o
-    0x080097c8   0x00000072   Code   RO         3828    i.u8g2_font_get_glyph_data  u8g2_font.o
-    0x0800983a   0x00000014   Code   RO         3829    i.u8g2_font_get_word  u8g2_font.o
-    0x0800984e   0x00000034   Code   RO         3830    i.u8g2_font_setup_decode  u8g2_font.o
-    0x08009882   0x00000018   Code   RO         6072    i.u8g2_is_intersection_decision_tree  u8g2_intersection.o
-    0x0800989a   0x00000002   PAD
-    0x0800989c   0x00000090   Code   RO         6120    i.u8g2_ll_hvline_vertical_top_lsb  u8g2_ll_hvline.o
-    0x0800992c   0x0000000c   Code   RO         3752    i.u8g2_m_16_8_f     u8g2_d_memory.o
-    0x08009938   0x0000006a   Code   RO         3831    i.u8g2_read_font_info  u8g2_font.o
-    0x080099a2   0x0000004e   Code   RO         3587    i.u8g2_send_buffer  u8g2_buffer.o
-    0x080099f0   0x00000046   Code   RO         6269    i.u8g2_update_dimension_common  u8g2_setup.o
-    0x08009a36   0x00000004   Code   RO         6270    i.u8g2_update_dimension_r0  u8g2_setup.o
-    0x08009a3a   0x00000022   Code   RO         6274    i.u8g2_update_page_win_r0  u8g2_setup.o
-    0x08009a5c   0x0000001e   Code   RO         7047    i.u8x8_DrawTile     u8x8_display.o
-    0x08009a7a   0x00000010   Code   RO         7049    i.u8x8_InitDisplay  u8x8_display.o
-    0x08009a8a   0x00000010   Code   RO         7051    i.u8x8_RefreshDisplay  u8x8_display.o
-    0x08009a9a   0x00000010   Code   RO         7054    i.u8x8_SetPowerSave  u8x8_display.o
-    0x08009aaa   0x00000022   Code   RO         7353    i.u8x8_Setup        u8x8_setup.o
-    0x08009acc   0x00000024   Code   RO         7354    i.u8x8_SetupDefaults  u8x8_setup.o
-    0x08009af0   0x00000010   Code   RO         7055    i.u8x8_SetupMemory  u8x8_display.o
-    0x08009b00   0x0000000e   Code   RO         6554    i.u8x8_ascii_next   u8x8_8x8.o
-    0x08009b0e   0x00000002   PAD
-    0x08009b10   0x00000044   Code   RO          493    i.u8x8_byte_4wire_hw_spi  gui.o
-    0x08009b54   0x0000000e   Code   RO         6680    i.u8x8_byte_SendByte  u8x8_byte.o
-    0x08009b62   0x00000010   Code   RO         6682    i.u8x8_byte_SetDC   u8x8_byte.o
-    0x08009b72   0x00000052   Code   RO         6795    i.u8x8_cad_001      u8x8_cad.o
-    0x08009bc4   0x00000010   Code   RO         6799    i.u8x8_cad_EndTransfer  u8x8_cad.o
-    0x08009bd4   0x00000010   Code   RO         6800    i.u8x8_cad_SendArg  u8x8_cad.o
-    0x08009be4   0x00000010   Code   RO         6801    i.u8x8_cad_SendCmd  u8x8_cad.o
-    0x08009bf4   0x00000010   Code   RO         6802    i.u8x8_cad_SendData  u8x8_cad.o
-    0x08009c04   0x00000068   Code   RO         6804    i.u8x8_cad_SendSequence  u8x8_cad.o
-    0x08009c6c   0x00000010   Code   RO         6805    i.u8x8_cad_StartTransfer  u8x8_cad.o
-    0x08009c7c   0x00000060   Code   RO         7056    i.u8x8_d_helper_display_init  u8x8_display.o
-    0x08009cdc   0x0000000a   Code   RO         7057    i.u8x8_d_helper_display_setup_memory  u8x8_display.o
-    0x08009ce6   0x00000002   PAD
-    0x08009ce8   0x0000003c   Code   RO         6981    i.u8x8_d_ssd1306_128x64_noname  u8x8_d_ssd1306_128x64_noname.o
-    0x08009d24   0x000000c8   Code   RO         6983    i.u8x8_d_ssd1306_sh1106_generic  u8x8_d_ssd1306_128x64_noname.o
-    0x08009dec   0x00000004   Code   RO         7356    i.u8x8_dummy_cb     u8x8_setup.o
-    0x08009df0   0x0000000c   Code   RO         7275    i.u8x8_gpio_call    u8x8_gpio.o
-    0x08009dfc   0x00000034   Code   RO          494    i.u8x8_stm32_gpio_and_delay  gui.o
-    0x08009e30   0x00000008   Code   RO         6562    i.u8x8_utf8_init    u8x8_8x8.o
-    0x08009e38   0x00000020   Code   RO           23    i.value             calc.o
-    0x08009e58   0x00000070   Code   RO           25    i.value_3           calc.o
-    0x08009ec8   0x000000a2   Code   RO           26    i.value_4           calc.o
-    0x08009f6a   0x00000002   PAD
-    0x08009f6c   0x000000fc   Code   RO           27    i.work              calc.o
-    0x0800a068   0x00000010   Data   RO         2865    .constdata          system_stm32f1xx.o
-    0x0800a078   0x00000008   Data   RO         2866    .constdata          system_stm32f1xx.o
-    0x0800a080   0x000007c5   Data   RO         4145    .constdata          u8g2_fonts.o
-    0x0800a845   0x00000003   PAD
-    0x0800a848   0x0000000c   Data   RO         6278    .constdata          u8g2_setup.o
-    0x0800a854   0x00000158   Data   RO         6985    .constdata          u8x8_d_ssd1306_128x64_noname.o
-    0x0800a9ac   0x00000004   PAD
-    0x0800a9b0   0x00000050   Data   RO         7468    .constdata          m_ws.l(acos.o)
-    0x0800aa00   0x00000050   Data   RO         7478    .constdata          m_ws.l(asin.o)
-    0x0800aa50   0x00000098   Data   RO         7488    .constdata          m_ws.l(atan.o)
-    0x0800aae8   0x00000058   Data   RO         7516    .constdata          m_ws.l(exp.o)
-    0x0800ab40   0x00000038   Data   RO         7526    .constdata          m_ws.l(log.o)
-    0x0800ab78   0x00000088   Data   RO         7536    .constdata          m_ws.l(pow.o)
-    0x0800ac00   0x00000081   Data   RO         7596    .constdata          mc_w.l(ctype_o.o)
-    0x0800ac81   0x00000003   PAD
-    0x0800ac84   0x00000004   Data   RO         7597    .constdata          mc_w.l(ctype_o.o)
-    0x0800ac88   0x00000030   Data   RO         7909    .constdata          m_ws.l(cos_i.o)
-    0x0800acb8   0x00000008   Data   RO         7935    .constdata          m_ws.l(qnan.o)
-    0x0800acc0   0x000000c8   Data   RO         7938    .constdata          m_ws.l(rred.o)
-    0x0800ad88   0x00000028   Data   RO         7942    .constdata          m_ws.l(sin_i.o)
-    0x0800adb0   0x00000060   Data   RO         7948    .constdata          m_ws.l(tan_i.o)
-    0x0800ae10   0x0000003d   Data   RO          716    .conststring        main.o
-    0x0800ae4d   0x00000003   PAD
-    0x0800ae50   0x00000038   Data   RO          717    .conststring        main.o
-    0x0800ae88   0x00000022   Data   RO          718    .conststring        main.o
-    0x0800aeaa   0x00000002   PAD
-    0x0800aeac   0x00000020   Data   RO         8013    Region$$Table       anon$$obj.o
+    0x08003c50   0x00000270   Code   RO         7481    i.asin              m_ws.l(asin.o)
+    0x08003ec0   0x00000220   Code   RO         7491    i.atan              m_ws.l(atan.o)
+    0x080040e0   0x000003fc   Code   RO           13    i.calc              calc.o
+    0x080044dc   0x0000039c   Code   RO           14    i.calc_d            calc.o
+    0x08004878   0x000000bc   Code   RO           15    i.calc_def          calc.o
+    0x08004934   0x000000f4   Code   RO         1079    i.calc_work         comp.o
+    0x08004a28   0x00000338   Code   RO         1080    i.comp_calc         comp.o
+    0x08004d60   0x0000009c   Code   RO         7501    i.cos               m_ws.l(cos.o)
+    0x08004dfc   0x00000080   Code   RO         1081    i.divi              comp.o
+    0x08004e7c   0x00000284   Code   RO         7519    i.exp               m_ws.l(exp.o)
+    0x08005100   0x00000048   Code   RO           16    i.fact              calc.o
+    0x08005148   0x00000018   Code   RO          715    i.fputc             main.o
+    0x08005160   0x00000022   Code   RO          467    i.gui_run           gui.o
+    0x08005182   0x0000001c   Code   RO           17    i.is_op             calc.o
+    0x0800519e   0x00000002   PAD
+    0x080051a0   0x00000030   Code   RO          468    i.key_init          gui.o
+    0x080051d0   0x000000d0   Code   RO          469    i.key_scan_lr       gui.o
+    0x080052a0   0x00000274   Code   RO          470    i.key_scan_ud       gui.o
+    0x08005514   0x0000035c   Code   RO         7529    i.log               m_ws.l(log.o)
+    0x08005870   0x00000028   Code   RO          236    i.log_v             value.o
+    0x08005898   0x00000158   Code   RO          716    i.main              main.o
+    0x080059f0   0x0000003e   Code   RO         1082    i.minus             comp.o
+    0x08005a2e   0x00000072   Code   RO         1083    i.mul               comp.o
+    0x08005aa0   0x000009d8   Code   RO         7539    i.pow               m_ws.l(pow.o)
+    0x08006478   0x0000040c   Code   RO          471    i.show_calc_menu    gui.o
+    0x08006884   0x0000029c   Code   RO          472    i.show_comp_calc    gui.o
+    0x08006b20   0x00000298   Code   RO          473    i.show_cub_calc     gui.o
+    0x08006db8   0x000003d8   Code   RO          474    i.show_def_solu     gui.o
+    0x08007190   0x00000124   Code   RO          475    i.show_equa_menu    gui.o
+    0x080072b4   0x00000124   Code   RO          476    i.show_func_menu    gui.o
+    0x080073d8   0x000002d4   Code   RO          477    i.show_func_solu    gui.o
+    0x080076ac   0x000000f4   Code   RO          478    i.show_main_menu    gui.o
+    0x080077a0   0x00000380   Code   RO          479    i.show_quad_calc    gui.o
+    0x08007b20   0x00000308   Code   RO          480    i.show_quar_calc    gui.o
+    0x08007e28   0x0000011c   Code   RO          481    i.show_sub0_menu    gui.o
+    0x08007f44   0x0000011c   Code   RO          482    i.show_sub1_menu    gui.o
+    0x08008060   0x0000011c   Code   RO          483    i.show_sub2_menu    gui.o
+    0x0800817c   0x0000011c   Code   RO          484    i.show_sub3_menu    gui.o
+    0x08008298   0x0000011c   Code   RO          485    i.show_sub4_menu    gui.o
+    0x080083b4   0x0000011c   Code   RO          486    i.show_sub5_menu    gui.o
+    0x080084d0   0x000001a4   Code   RO          487    i.show_sub6_menu    gui.o
+    0x08008674   0x00000118   Code   RO          488    i.show_sub7_menu    gui.o
+    0x0800878c   0x00000118   Code   RO          489    i.show_sub8_menu    gui.o
+    0x080088a4   0x000001a0   Code   RO          490    i.show_sub9_menu    gui.o
+    0x08008a44   0x000000a0   Code   RO         7549    i.sin               m_ws.l(sin.o)
+    0x08008ae4   0x00000128   Code   RO           18    i.solve             calc.o
+    0x08008c0c   0x000000c8   Code   RO           20    i.solve_3           calc.o
+    0x08008cd4   0x000000f8   Code   RO           21    i.solve_4           calc.o
+    0x08008dcc   0x0000004c   Code   RO         7567    i.sqrt              m_ws.l(sqrt.o)
+    0x08008e18   0x0000001c   Code   RO         7575    i.strtod            m_ws.l(strtod.o)
+    0x08008e34   0x00000064   Code   RO         7579    i.tan               m_ws.l(tan.o)
+    0x08008e98   0x0000001c   Code   RO          491    i.trans_pin         gui.o
+    0x08008eb4   0x0000002c   Code   RO          492    i.u8g2Init          gui.o
+    0x08008ee0   0x00000012   Code   RO         3580    i.u8g2_ClearBuffer  u8g2_buffer.o
+    0x08008ef2   0x00000040   Code   RO         3674    i.u8g2_DrawCircle   u8g2_circle.o
+    0x08008f32   0x00000070   Code   RO         3789    i.u8g2_DrawGlyph    u8g2_font.o
+    0x08008fa2   0x0000000c   Code   RO         6013    i.u8g2_DrawHLine    u8g2_hvline.o
+    0x08008fae   0x00000002   PAD
+    0x08008fb0   0x000000ac   Code   RO         6014    i.u8g2_DrawHVLine   u8g2_hvline.o
+    0x0800905c   0x0000002e   Code   RO         6015    i.u8g2_DrawPixel    u8g2_hvline.o
+    0x0800908a   0x00000102   Code   RO         3553    i.u8g2_DrawRFrame   u8g2_box.o
+    0x0800918c   0x00000010   Code   RO         3791    i.u8g2_DrawStr      u8g2_font.o
+    0x0800919c   0x0000000c   Code   RO         6016    i.u8g2_DrawVLine    u8g2_hvline.o
+    0x080091a8   0x0000001c   Code   RO         3581    i.u8g2_FirstPage    u8g2_buffer.o
+    0x080091c4   0x00000030   Code   RO         6075    i.u8g2_IsIntersection  u8g2_intersection.o
+    0x080091f4   0x0000003e   Code   RO         3582    i.u8g2_NextPage     u8g2_buffer.o
+    0x08009232   0x0000001c   Code   RO         3584    i.u8g2_SetBufferCurrTileRow  u8g2_buffer.o
+    0x0800924e   0x00000020   Code   RO         3807    i.u8g2_SetFont      u8g2_font.o
+    0x0800926e   0x00000002   PAD
+    0x08009270   0x0000000c   Code   RO         3810    i.u8g2_SetFontPosBaseline  u8g2_font.o
+    0x0800927c   0x0000001c   Code   RO         6263    i.u8g2_SetMaxClipWindow  u8g2_setup.o
+    0x08009298   0x00000046   Code   RO         6264    i.u8g2_SetupBuffer  u8g2_setup.o
+    0x080092de   0x00000002   PAD
+    0x080092e0   0x00000038   Code   RO         3769    i.u8g2_Setup_ssd1306_128x64_noname_f  u8g2_d_setup.o
+    0x08009318   0x00000052   Code   RO         3817    i.u8g2_UpdateRefHeight  u8g2_font.o
+    0x0800936a   0x0000001c   Code   RO         3818    i.u8g2_add_vector_x  u8g2_font.o
+    0x08009386   0x0000001c   Code   RO         3819    i.u8g2_add_vector_y  u8g2_font.o
+    0x080093a2   0x0000006e   Code   RO         6266    i.u8g2_apply_clip_window  u8g2_setup.o
+    0x08009410   0x0000003c   Code   RO         6018    i.u8g2_clip_intersection2  u8g2_hvline.o
+    0x0800944c   0x0000006a   Code   RO         3678    i.u8g2_draw_circle  u8g2_circle.o
+    0x080094b6   0x000000ba   Code   RO         3679    i.u8g2_draw_circle_section  u8g2_circle.o
+    0x08009570   0x00000012   Code   RO         6019    i.u8g2_draw_hv_line_2dir  u8g2_hvline.o
+    0x08009582   0x0000000c   Code   RO         6268    i.u8g2_draw_l90_r0  u8g2_setup.o
+    0x0800958e   0x00000076   Code   RO         3820    i.u8g2_draw_string  u8g2_font.o
+    0x08009604   0x00000004   Code   RO         3826    i.u8g2_font_calc_vref_font  u8g2_font.o
+    0x08009608   0x00000014   Code   RO         3828    i.u8g2_font_decode_get_signed_bits  u8g2_font.o
+    0x0800961c   0x00000034   Code   RO         3829    i.u8g2_font_decode_get_unsigned_bits  u8g2_font.o
+    0x08009650   0x00000114   Code   RO         3830    i.u8g2_font_decode_glyph  u8g2_font.o
+    0x08009764   0x0000008c   Code   RO         3831    i.u8g2_font_decode_len  u8g2_font.o
+    0x080097f0   0x00000072   Code   RO         3832    i.u8g2_font_get_glyph_data  u8g2_font.o
+    0x08009862   0x00000014   Code   RO         3833    i.u8g2_font_get_word  u8g2_font.o
+    0x08009876   0x00000034   Code   RO         3834    i.u8g2_font_setup_decode  u8g2_font.o
+    0x080098aa   0x00000018   Code   RO         6076    i.u8g2_is_intersection_decision_tree  u8g2_intersection.o
+    0x080098c2   0x00000002   PAD
+    0x080098c4   0x00000090   Code   RO         6124    i.u8g2_ll_hvline_vertical_top_lsb  u8g2_ll_hvline.o
+    0x08009954   0x0000000c   Code   RO         3756    i.u8g2_m_16_8_f     u8g2_d_memory.o
+    0x08009960   0x0000006a   Code   RO         3835    i.u8g2_read_font_info  u8g2_font.o
+    0x080099ca   0x0000004e   Code   RO         3591    i.u8g2_send_buffer  u8g2_buffer.o
+    0x08009a18   0x00000046   Code   RO         6273    i.u8g2_update_dimension_common  u8g2_setup.o
+    0x08009a5e   0x00000004   Code   RO         6274    i.u8g2_update_dimension_r0  u8g2_setup.o
+    0x08009a62   0x00000022   Code   RO         6278    i.u8g2_update_page_win_r0  u8g2_setup.o
+    0x08009a84   0x0000001e   Code   RO         7051    i.u8x8_DrawTile     u8x8_display.o
+    0x08009aa2   0x00000010   Code   RO         7053    i.u8x8_InitDisplay  u8x8_display.o
+    0x08009ab2   0x00000010   Code   RO         7055    i.u8x8_RefreshDisplay  u8x8_display.o
+    0x08009ac2   0x00000010   Code   RO         7058    i.u8x8_SetPowerSave  u8x8_display.o
+    0x08009ad2   0x00000022   Code   RO         7357    i.u8x8_Setup        u8x8_setup.o
+    0x08009af4   0x00000024   Code   RO         7358    i.u8x8_SetupDefaults  u8x8_setup.o
+    0x08009b18   0x00000010   Code   RO         7059    i.u8x8_SetupMemory  u8x8_display.o
+    0x08009b28   0x0000000e   Code   RO         6558    i.u8x8_ascii_next   u8x8_8x8.o
+    0x08009b36   0x00000002   PAD
+    0x08009b38   0x00000044   Code   RO          493    i.u8x8_byte_4wire_hw_spi  gui.o
+    0x08009b7c   0x0000000e   Code   RO         6684    i.u8x8_byte_SendByte  u8x8_byte.o
+    0x08009b8a   0x00000010   Code   RO         6686    i.u8x8_byte_SetDC   u8x8_byte.o
+    0x08009b9a   0x00000052   Code   RO         6799    i.u8x8_cad_001      u8x8_cad.o
+    0x08009bec   0x00000010   Code   RO         6803    i.u8x8_cad_EndTransfer  u8x8_cad.o
+    0x08009bfc   0x00000010   Code   RO         6804    i.u8x8_cad_SendArg  u8x8_cad.o
+    0x08009c0c   0x00000010   Code   RO         6805    i.u8x8_cad_SendCmd  u8x8_cad.o
+    0x08009c1c   0x00000010   Code   RO         6806    i.u8x8_cad_SendData  u8x8_cad.o
+    0x08009c2c   0x00000068   Code   RO         6808    i.u8x8_cad_SendSequence  u8x8_cad.o
+    0x08009c94   0x00000010   Code   RO         6809    i.u8x8_cad_StartTransfer  u8x8_cad.o
+    0x08009ca4   0x00000060   Code   RO         7060    i.u8x8_d_helper_display_init  u8x8_display.o
+    0x08009d04   0x0000000a   Code   RO         7061    i.u8x8_d_helper_display_setup_memory  u8x8_display.o
+    0x08009d0e   0x00000002   PAD
+    0x08009d10   0x0000003c   Code   RO         6985    i.u8x8_d_ssd1306_128x64_noname  u8x8_d_ssd1306_128x64_noname.o
+    0x08009d4c   0x000000c8   Code   RO         6987    i.u8x8_d_ssd1306_sh1106_generic  u8x8_d_ssd1306_128x64_noname.o
+    0x08009e14   0x00000004   Code   RO         7360    i.u8x8_dummy_cb     u8x8_setup.o
+    0x08009e18   0x0000000c   Code   RO         7279    i.u8x8_gpio_call    u8x8_gpio.o
+    0x08009e24   0x00000034   Code   RO          494    i.u8x8_stm32_gpio_and_delay  gui.o
+    0x08009e58   0x00000008   Code   RO         6566    i.u8x8_utf8_init    u8x8_8x8.o
+    0x08009e60   0x00000020   Code   RO           23    i.value             calc.o
+    0x08009e80   0x00000070   Code   RO           25    i.value_3           calc.o
+    0x08009ef0   0x000000a2   Code   RO           26    i.value_4           calc.o
+    0x08009f92   0x00000002   PAD
+    0x08009f94   0x000001a8   Code   RO           27    i.work              calc.o
+    0x0800a13c   0x00000010   Data   RO         2869    .constdata          system_stm32f1xx.o
+    0x0800a14c   0x00000008   Data   RO         2870    .constdata          system_stm32f1xx.o
+    0x0800a154   0x000007c5   Data   RO         4149    .constdata          u8g2_fonts.o
+    0x0800a919   0x00000003   PAD
+    0x0800a91c   0x0000000c   Data   RO         6282    .constdata          u8g2_setup.o
+    0x0800a928   0x00000158   Data   RO         6989    .constdata          u8x8_d_ssd1306_128x64_noname.o
+    0x0800aa80   0x00000050   Data   RO         7472    .constdata          m_ws.l(acos.o)
+    0x0800aad0   0x00000050   Data   RO         7482    .constdata          m_ws.l(asin.o)
+    0x0800ab20   0x00000098   Data   RO         7492    .constdata          m_ws.l(atan.o)
+    0x0800abb8   0x00000058   Data   RO         7520    .constdata          m_ws.l(exp.o)
+    0x0800ac10   0x00000038   Data   RO         7530    .constdata          m_ws.l(log.o)
+    0x0800ac48   0x00000088   Data   RO         7540    .constdata          m_ws.l(pow.o)
+    0x0800acd0   0x00000081   Data   RO         7600    .constdata          mc_w.l(ctype_o.o)
+    0x0800ad51   0x00000003   PAD
+    0x0800ad54   0x00000004   Data   RO         7601    .constdata          mc_w.l(ctype_o.o)
+    0x0800ad58   0x00000030   Data   RO         7913    .constdata          m_ws.l(cos_i.o)
+    0x0800ad88   0x00000008   Data   RO         7939    .constdata          m_ws.l(qnan.o)
+    0x0800ad90   0x000000c8   Data   RO         7942    .constdata          m_ws.l(rred.o)
+    0x0800ae58   0x00000028   Data   RO         7946    .constdata          m_ws.l(sin_i.o)
+    0x0800ae80   0x00000060   Data   RO         7952    .constdata          m_ws.l(tan_i.o)
+    0x0800aee0   0x0000003d   Data   RO          720    .conststring        main.o
+    0x0800af1d   0x00000003   PAD
+    0x0800af20   0x00000038   Data   RO          721    .conststring        main.o
+    0x0800af58   0x00000022   Data   RO          722    .conststring        main.o
+    0x0800af7a   0x00000002   PAD
+    0x0800af7c   0x00000020   Data   RO         8017    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00001c88, Max: 0x00005000, ABSOLUTE, COMPRESSED[0x0000008c])
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00001c88, Max: 0x00005000, ABSOLUTE, COMPRESSED[0x00000090])
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x00000028   Data   RW           31    .data               calc.o
     0x20000028   0x00000088   Data   RW          497    .data               gui.o
-    0x200000b0   0x00000004   Data   RW          719    .data               main.o
-    0x200000b4   0x00000004   Data   RW          721    .data               main.o
-    0x200000b8   0x00000004   Data   RW          722    .data               main.o
-    0x200000bc   0x00000004   Data   RW          723    .data               main.o
-    0x200000c0   0x00000004   Data   RW          724    .data               main.o
-    0x200000c4   0x0000006c   Data   RW          725    .data               main.o
-    0x20000130   0x00000004   Data   RW          726    .data               main.o
-    0x20000134   0x00000004   Data   RW          727    .data               main.o
-    0x20000138   0x00000004   Data   RW          728    .data               main.o
-    0x2000013c   0x00000004   Data   RW          729    .data               main.o
-    0x20000140   0x00000004   Data   RW          730    .data               main.o
-    0x20000144   0x00000004   Data   RW          731    .data               main.o
-    0x20000148   0x00000004   Data   RW          733    .data               main.o
-    0x2000014c   0x00000004   Data   RW          734    .data               main.o
-    0x20000150   0x00000004   Data   RW          735    .data               main.o
-    0x20000154   0x00000004   Data   RW          736    .data               main.o
-    0x20000158   0x00000004   Data   RW          737    .data               main.o
-    0x2000015c   0x00000004   Data   RW          738    .data               main.o
-    0x20000160   0x00000004   Data   RW          739    .data               main.o
-    0x20000164   0x00000004   Data   RW          740    .data               main.o
-    0x20000168   0x00000004   Data   RW          741    .data               main.o
-    0x2000016c   0x00000028   Data   RW          743    .data               main.o
-    0x20000194   0x00000020   Data   RW          744    .data               main.o
-    0x200001b4   0x00000004   Data   RW          746    .data               main.o
-    0x200001b8   0x00000004   Data   RW          747    .data               main.o
-    0x200001bc   0x00000004   Data   RW          750    .data               main.o
-    0x200001c0   0x00000004   Data   RW          751    .data               main.o
-    0x200001c4   0x00000024   Data   RW         1081    .data               comp.o
-    0x200001e8   0x0000000c   Data   RW         1520    .data               stm32f1xx_hal.o
-    0x200001f4   0x00000004   Data   RW         2867    .data               system_stm32f1xx.o
-    0x200001f8   0x00000004   Data   RW         7967    .data               mc_w.l(stdout.o)
-    0x200001fc   0x00000004   Data   RW         7979    .data               mc_w.l(errno.o)
+    0x200000b0   0x00000004   Data   RW          723    .data               main.o
+    0x200000b4   0x00000004   Data   RW          725    .data               main.o
+    0x200000b8   0x00000004   Data   RW          726    .data               main.o
+    0x200000bc   0x00000004   Data   RW          727    .data               main.o
+    0x200000c0   0x00000004   Data   RW          728    .data               main.o
+    0x200000c4   0x0000006c   Data   RW          729    .data               main.o
+    0x20000130   0x00000004   Data   RW          730    .data               main.o
+    0x20000134   0x00000004   Data   RW          731    .data               main.o
+    0x20000138   0x00000004   Data   RW          732    .data               main.o
+    0x2000013c   0x00000004   Data   RW          733    .data               main.o
+    0x20000140   0x00000004   Data   RW          734    .data               main.o
+    0x20000144   0x00000004   Data   RW          735    .data               main.o
+    0x20000148   0x00000004   Data   RW          737    .data               main.o
+    0x2000014c   0x00000004   Data   RW          738    .data               main.o
+    0x20000150   0x00000004   Data   RW          739    .data               main.o
+    0x20000154   0x00000004   Data   RW          740    .data               main.o
+    0x20000158   0x00000004   Data   RW          741    .data               main.o
+    0x2000015c   0x00000004   Data   RW          742    .data               main.o
+    0x20000160   0x00000004   Data   RW          743    .data               main.o
+    0x20000164   0x00000004   Data   RW          744    .data               main.o
+    0x20000168   0x00000004   Data   RW          745    .data               main.o
+    0x2000016c   0x00000028   Data   RW          747    .data               main.o
+    0x20000194   0x00000020   Data   RW          748    .data               main.o
+    0x200001b4   0x00000004   Data   RW          750    .data               main.o
+    0x200001b8   0x00000004   Data   RW          751    .data               main.o
+    0x200001bc   0x00000004   Data   RW          754    .data               main.o
+    0x200001c0   0x00000004   Data   RW          755    .data               main.o
+    0x200001c4   0x00000024   Data   RW         1085    .data               comp.o
+    0x200001e8   0x0000000c   Data   RW         1524    .data               stm32f1xx_hal.o
+    0x200001f4   0x00000004   Data   RW         2871    .data               system_stm32f1xx.o
+    0x200001f8   0x00000004   Data   RW         7971    .data               mc_w.l(stdout.o)
+    0x200001fc   0x00000004   Data   RW         7983    .data               mc_w.l(errno.o)
     0x20000200   0x00000384   Zero   RW           28    .bss                calc.o
     0x20000584   0x0000044c   Zero   RW          495    .bss                gui.o
-    0x200009d0   0x00000010   Zero   RW          713    .bss                main.o
-    0x200009e0   0x0000009c   Zero   RW          881    .bss                spi.o
-    0x20000a7c   0x00000044   Zero   RW          923    .bss                usart.o
-    0x20000ac0   0x000009c8   Zero   RW         1080    .bss                comp.o
-    0x20001488   0x00000400   Zero   RW         3753    .bss                u8g2_d_memory.o
+    0x200009d0   0x00000010   Zero   RW          717    .bss                main.o
+    0x200009e0   0x0000009c   Zero   RW          885    .bss                spi.o
+    0x20000a7c   0x00000044   Zero   RW          927    .bss                usart.o
+    0x20000ac0   0x000009c8   Zero   RW         1084    .bss                comp.o
+    0x20001488   0x00000400   Zero   RW         3757    .bss                u8g2_d_memory.o
     0x20001888   0x00000400   Zero   RW            1    STACK               startup_stm32f103xb.o
 
 
@@ -6438,11 +6440,11 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      3554        188          0         40        900     409810   calc.o
+      3706        204          0         40        900     410042   calc.o
       1434         40          0         36       2504       5177   comp.o
         44          4          0          0          0        690   dma.o
        280         22          0          0          0        947   gpio.o
-     10762       1684          0        136       1100     183009   gui.o
+     10822       1690          0        136       1100     187764   gui.o
        752         10          0          0          0       1684   keyboard.o
        466         62        151        276         16       6851   main.o
          0          0          0          0          0     157156   mui_u8g2.o
@@ -6480,9 +6482,9 @@ Image component sizes
         40          0          0          0          0        548   value.o
 
     ----------------------------------------------------------------------
-     26624       2366       2800        504       6792    1169243   Object Totals
+     26836       2388       2796        504       6792    1174230   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        36          0         12          0          0          0   (incl. Padding)
+        36          0          8          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -6574,15 +6576,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     40828       3226       3920        512       6792    1163635   Grand Totals
-     40828       3226       3920        140       6792    1163635   ELF Image Totals (compressed)
-     40828       3226       3920        140          0          0   ROM Totals
+     41040       3248       3916        512       6792    1168622   Grand Totals
+     41040       3248       3916        144       6792    1168622   ELF Image Totals (compressed)
+     41040       3248       3916        144          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                44748 (  43.70kB)
+    Total RO  Size (Code + RO Data)                44956 (  43.90kB)
     Total RW  Size (RW Data + ZI Data)              7304 (   7.13kB)
-    Total ROM Size (Code + RO Data + RW Data)      44888 (  43.84kB)
+    Total ROM Size (Code + RO Data + RW Data)      45100 (  44.04kB)
 
 ==============================================================================
 

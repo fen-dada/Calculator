@@ -3,9 +3,9 @@
 <title>Static Call Graph - [Calc_test\Calc_test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Calc_test\Calc_test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Tue Feb 07 22:38:07 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Sat Feb 11 16:03:53 2023
 <BR><P>
-<H3>Maximum Stack Usage =       1160 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       1272 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; show_func_solu &rArr; solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 <P>
@@ -290,9 +290,7 @@ Global Symbols
 <P><STRONG><a name="[4c]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;u8g2_ClearBuffer
@@ -308,6 +306,8 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[94]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
@@ -325,13 +325,13 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ba]"></a>strcat</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, strcat.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_d
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[b4]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
@@ -540,19 +540,22 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[c3]"></a>__aeabi_cdcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cdcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fact
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;work
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fact
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;comp_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log
 </UL>
 
 <P><STRONG><a name="[c6]"></a>__aeabi_cdcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fact
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;work
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fact
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exp
 </UL>
 
 <P><STRONG><a name="[a9]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;work
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve_4
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve_3
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve
@@ -747,12 +750,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_scan_ud
@@ -771,6 +769,11 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[77]"></a>HAL_GPIO_Init</STRONG> (Thumb, 446 bytes, Stack size 40 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_Init))
@@ -782,12 +785,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[90]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_scan_ud
@@ -806,6 +804,11 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[8c]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin))
@@ -1056,9 +1059,7 @@ Global Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
@@ -1073,6 +1074,8 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.MemManage_Handler))
@@ -1156,11 +1159,10 @@ Global Symbols
 <P><STRONG><a name="[bd]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;work
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_def
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
@@ -1175,6 +1177,8 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[141]"></a>__c89sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
@@ -1428,8 +1432,8 @@ Global Symbols
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub5_menu
 </UL>
 
-<P><STRONG><a name="[b3]"></a>calc</STRONG> (Thumb, 998 bytes, Stack size 40 bytes, calc.o(i.calc))
-<BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = calc &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[b3]"></a>calc</STRONG> (Thumb, 980 bytes, Stack size 40 bytes, calc.o(i.calc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = calc &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
@@ -1443,12 +1447,12 @@ Global Symbols
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[b8]"></a>calc_d</STRONG> (Thumb, 880 bytes, Stack size 160 bytes, calc.o(i.calc_d))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 544<LI>Call Chain = calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
@@ -1470,7 +1474,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[bc]"></a>calc_def</STRONG> (Thumb, 174 bytes, Stack size 160 bytes, calc.o(i.calc_def))
-<BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = calc_def &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = calc_def &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
@@ -1584,15 +1588,15 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
 </UL>
 <P><STRONG><a name="[e9]"></a>gui_run</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, gui.o(i.gui_run))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub6_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[b5]"></a>is_op</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, calc.o(i.is_op))
@@ -1625,14 +1629,14 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub6_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[cd]"></a>log</STRONG> (Thumb, 808 bytes, Stack size 96 bytes, log.o(i.log))
@@ -1667,14 +1671,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 322 bytes, Stack size 152 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1160<LI>Call Chain = main &rArr; show_func_solu &rArr; solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 1272<LI>Call Chain = main &rArr; show_func_solu &rArr; solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_init
@@ -1702,6 +1701,11 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
@@ -1754,8 +1758,8 @@ Global Symbols
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
 </UL>
 
-<P><STRONG><a name="[d4]"></a>show_calc_menu</STRONG> (Thumb, 786 bytes, Stack size 40 bytes, gui.o(i.show_calc_menu))
-<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = show_calc_menu &rArr; calc &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[d4]"></a>show_calc_menu</STRONG> (Thumb, 830 bytes, Stack size 32 bytes, gui.o(i.show_calc_menu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = show_calc_menu &rArr; calc &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -1803,8 +1807,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e6]"></a>show_def_solu</STRONG> (Thumb, 756 bytes, Stack size 40 bytes, gui.o(i.show_def_solu))
-<BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = show_def_solu &rArr; calc_def &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[e6]"></a>show_def_solu</STRONG> (Thumb, 766 bytes, Stack size 40 bytes, gui.o(i.show_def_solu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 744<LI>Call Chain = show_def_solu &rArr; calc_def &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_scan_ud
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gui_run
@@ -1848,7 +1852,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[e4]"></a>show_func_solu</STRONG> (Thumb, 536 bytes, Stack size 16 bytes, gui.o(i.show_func_solu))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1008<LI>Call Chain = show_func_solu &rArr; solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 1120<LI>Call Chain = show_func_solu &rArr; solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -2085,7 +2089,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ed]"></a>solve</STRONG> (Thumb, 258 bytes, Stack size 440 bytes, calc.o(i.solve))
-<BR><BR>[Stack]<UL><LI>Max Depth = 992<LI>Call Chain = solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 1104<LI>Call Chain = solve &rArr; value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
@@ -2260,12 +2264,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;u8g2_draw_string
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_cub_calc
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_comp_calc
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_calc_menu
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub9_menu
@@ -2280,6 +2279,11 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_sub0_menu
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quar_calc
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_quad_calc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_main_menu
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_solu
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_func_menu
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_equa_menu
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;show_def_solu
 </UL>
 
 <P><STRONG><a name="[101]"></a>u8g2_DrawVLine</STRONG> (Thumb, 12 bytes, Stack size 16 bytes, u8g2_hvline.o(i.u8g2_DrawVLine))
@@ -2639,7 +2643,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[f1]"></a>value</STRONG> (Thumb, 32 bytes, Stack size 120 bytes, calc.o(i.value))
-<BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<BR><BR>[Stack]<UL><LI>Max Depth = 664<LI>Call Chain = value &rArr; calc_d &rArr; work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_d
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
@@ -2665,13 +2669,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;solve_4
 </UL>
 
-<P><STRONG><a name="[b6]"></a>work</STRONG> (Thumb, 244 bytes, Stack size 24 bytes, calc.o(i.work))
-<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[b6]"></a>work</STRONG> (Thumb, 398 bytes, Stack size 136 bytes, calc.o(i.work))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = work &rArr; cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_op
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fact
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log
@@ -2679,6 +2686,7 @@ Global Symbols
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;asin
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acos
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tan
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pow

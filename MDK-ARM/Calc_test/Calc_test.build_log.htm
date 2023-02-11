@@ -22,67 +22,21 @@ Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
 F:\stm32\Calc_test\MDK-ARM\Calc_test.uvprojx
-Project File Date:  02/02/2023
+Project File Date:  02/11/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Calc_test'
-compiling gui.c...
-../../keyboard/MDK-ARM/keyboard.h(4): warning:  #1295-D: Deprecated declaration MatrixKey - give arg types
-  char MatrixKey();
-../../keyboard/MDK-ARM/keyboard.h(5): warning:  #1295-D: Deprecated declaration MatrixKey_s - give arg types
-  char* MatrixKey_s();
-../../keyboard/MDK-ARM/keyboard.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
+compiling calc.c...
 C:/Users/admin/Desktop/calc/calc.h(10): warning:  #1295-D: Deprecated declaration work - give arg types
   void work();
-comp.h(20): warning:  #1295-D: Deprecated declaration calc_work - give arg types
-  void calc_work();
-comp.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-gui.h(34): warning:  #47-D: incompatible redefinition of macro "XLevelH" (declared at line 16 of "oled.h")
-  #define XLevelH		0x00
-gui.h(99): warning:  #1295-D: Deprecated declaration key_init - give arg types
-  void key_init();
-gui.h(103): warning:  #1295-D: Deprecated declaration key_scan_ud - give arg types
-  int key_scan_ud();
-gui.h(104): warning:  #1295-D: Deprecated declaration key_scan_lr - give arg types
-  int key_scan_lr();
-gui.c(44): warning:  #188-D: enumerated type mixed with another type
-  			HAL_GPIO_WritePin(
-PIOB,
-PIO_PIN_11,arg_int);
-gui.c(70): warning:  #188-D: enumerated type mixed with another type
-              HAL_GPIO_WritePin(
-PIOB,
-PIO_PIN_11,arg_int);
-gui.c(126): warning:  #111-D: statement is unreachable
-  				break;
-gui.c(130): warning:  #111-D: statement is unreachable
-  				break;
-gui.c(134): warning:  #111-D: statement is unreachable
-  				break;
-gui.c(138): warning:  #111-D: statement is unreachable
-  				break;
-gui.c(141): warning:  #940-D: missing return statement at end of non-void function "trans_pin"
+calc.c(523): warning:  #1-D: last line of file ends without a newline
   }
-gui.c(192): warning:  #940-D: missing return statement at end of non-void function "key_scan_lr"
-  }
-gui.c(279): warning:  #940-D: missing return statement at end of non-void function "key_scan_ud"
-  }
-gui.c(372): warning:  #550-D: variable "i" was set but never used
-  	static int i,next_i,third_i=0;
-gui.c(372): warning:  #550-D: variable "next_i" was set but never used
-  	static int i,next_i,third_i=0;
-gui.c(372): warning:  #550-D: variable "third_i" was set but never used
-  	static int i,next_i,third_i=0;
-gui.c(1778): warning:  #177-D: variable "end" was declared but never referenced
-  				char* end;
-gui.c: 23 warnings, 0 errors
+calc.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=40828 RO-data=3920 RW-data=512 ZI-data=6792  
+Program Size: Code=41040 RO-data=3916 RW-data=512 ZI-data=6792  
 FromELF: creating hex file...
-"Calc_test\Calc_test.axf" - 0 Error(s), 23 Warning(s).
+"Calc_test\Calc_test.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -100,7 +54,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
